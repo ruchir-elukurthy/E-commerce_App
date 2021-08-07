@@ -52,8 +52,7 @@
 		BA82DAFB26BE230F00C4049E /* E-commerce-nursery */ = {
 			isa = PBXGroup;
 			children = (
-				BA82DAFC26BE230F00C4049E /* E_commerce_nurseryApp.swift */,
-				BA82DAFE26BE230F00C4049E /* ContentView.swift */,
+				BA82DB0C26BE270300C4049E /* App */,
 				BA82DB0026BE231300C4049E /* Assets.xcassets */,
 				BA82DB0526BE231300C4049E /* Info.plist */,
 				BA82DB0226BE231300C4049E /* Preview Content */,
@@ -67,6 +66,15 @@
 				BA82DB0326BE231300C4049E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BA82DB0C26BE270300C4049E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BA82DAFE26BE230F00C4049E /* ContentView.swift */,
+				BA82DAFC26BE230F00C4049E /* E_commerce_nurseryApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
