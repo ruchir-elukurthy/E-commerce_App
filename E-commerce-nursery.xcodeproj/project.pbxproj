@@ -11,6 +11,10 @@
 		BA82DAFF26BE230F00C4049E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82DAFE26BE230F00C4049E /* ContentView.swift */; };
 		BA82DB0126BE231300C4049E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA82DB0026BE231300C4049E /* Assets.xcassets */; };
 		BA82DB0426BE231300C4049E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA82DB0326BE231300C4049E /* Preview Assets.xcassets */; };
+		BA82DB0F26BE5EE600C4049E /* LoginButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82DB0E26BE5EE600C4049E /* LoginButtonView.swift */; };
+		BA82DB1126BE5EF900C4049E /* RegisterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82DB1026BE5EF900C4049E /* RegisterButtonView.swift */; };
+		BA82DB1326BE641600C4049E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82DB1226BE641600C4049E /* LoginView.swift */; };
+		BA82DB1526BE642400C4049E /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82DB1426BE642400C4049E /* RegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		BA82DB0026BE231300C4049E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA82DB0326BE231300C4049E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BA82DB0526BE231300C4049E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA82DB0E26BE5EE600C4049E /* LoginButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonView.swift; sourceTree = "<group>"; };
+		BA82DB1026BE5EF900C4049E /* RegisterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterButtonView.swift; sourceTree = "<group>"; };
+		BA82DB1226BE641600C4049E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BA82DB1426BE642400C4049E /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +81,20 @@
 			children = (
 				BA82DAFE26BE230F00C4049E /* ContentView.swift */,
 				BA82DAFC26BE230F00C4049E /* E_commerce_nurseryApp.swift */,
+				BA82DB0D26BE5ED200C4049E /* View */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		BA82DB0D26BE5ED200C4049E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA82DB0E26BE5EE600C4049E /* LoginButtonView.swift */,
+				BA82DB1226BE641600C4049E /* LoginView.swift */,
+				BA82DB1426BE642400C4049E /* RegisterView.swift */,
+				BA82DB1026BE5EF900C4049E /* RegisterButtonView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA82DB0F26BE5EE600C4049E /* LoginButtonView.swift in Sources */,
+				BA82DB1126BE5EF900C4049E /* RegisterButtonView.swift in Sources */,
 				BA82DAFF26BE230F00C4049E /* ContentView.swift in Sources */,
+				BA82DB1526BE642400C4049E /* RegisterView.swift in Sources */,
+				BA82DB1326BE641600C4049E /* LoginView.swift in Sources */,
 				BA82DAFD26BE230F00C4049E /* E_commerce_nurseryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

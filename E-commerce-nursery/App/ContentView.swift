@@ -7,11 +7,14 @@
 
 import SwiftUI
 
-struct ImageOverlay: View {
+struct Header: View {
+    
+    var text: String
     var body: some View {
         ZStack {
-            Text("wrbvorwjbvrvwrbvj")
-                .font(.callout)
+            Text(text)
+                .font(.title)
+                .fontWeight(.bold)
                 .padding(6)
                 .foregroundColor(.white)
         }
@@ -21,6 +24,25 @@ struct ImageOverlay: View {
     }
 }
 
+
+struct SubHeader: View {
+    
+    var text: String
+    var body: some View {
+        ZStack {
+            Text(text)
+                .font(.title3)
+                .fontWeight(.light)
+                .padding(10)
+                .foregroundColor(.white)
+        }
+        .opacity(0.8)
+        .padding(6)
+    }
+}
+
+
+
 struct ContentView: View {
     var body: some View {
         VStack {
@@ -29,9 +51,16 @@ struct ContentView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .overlay(GeometryReader{ geometry in
-                        ImageOverlay() // sized based on first
+                        Header(text: "Support local nurseries") // sized based on first
+                            .frame(width: geometry.size.width, height: geometry.size.height*0.3)
+                        SubHeader(text: "Shop local nursery today") // sized based on first
                             .frame(width: geometry.size.width, height: geometry.size.height*0.4)
+                        RegisterButtonView()
+                            .frame(width: geometry.size.width, height: geometry.size.height*1.55)
+                        LoginButtonView()
+                            .frame(width: geometry.size.width, height: geometry.size.height*1.8)
                     })
+    
                     .frame(width: geo.size.width)
                     .edgesIgnoringSafeArea(.all)
             }
