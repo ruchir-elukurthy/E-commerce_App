@@ -16,19 +16,18 @@ struct RegisterView: View {
     @State var password: String = ""
     
     var body: some View {
-        //NavigationView {
+        NavigationView {
+//            VStack {
+//                Text("Welcome!")
+//                   .font(.largeTitle)
+//                   .fontWeight(.semibold)
+//                Image("registerScreen")
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fill)
+//                    .frame(width: 200, height: 300)
+//                    .clipShape(Circle())
+//                    .cornerRadius(150)
                 VStack {
-                    Text("Welcome!")
-                       .font(.largeTitle)
-                       .fontWeight(.semibold)
-                       .padding(.bottom, 10)
-                    Image("registerScreen")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 200, height: 300)
-                        .clipShape(Circle())
-                        .cornerRadius(150)
-                        .padding(.bottom, 15)
                     TextField("Email", text: $email)
                         .padding()
                         .background(Color(UIColor.lightGray))
@@ -39,23 +38,28 @@ struct RegisterView: View {
                         .background(Color(UIColor.lightGray))
                         .cornerRadius(100.0)
                         .padding(.bottom, 20)
-                    RegisterButtonView()
-//                    if register() == true {
-//                        NavigationLink(destination: ShopView()) {
-//                }
-                    //}
-            //}
-        }
-    }
+                    Button(action: {
+                        registerSuccess = register()
+                        print(registerSuccess)
+                    }, label: {
+                        Text("REGISTER")
+                            .foregroundColor(.white)
+                            .frame(width: 200, height: 50, alignment: .center)
+                            .cornerRadius(8)
+                            .background(Color.green)
+                    })
+                    if registerSuccess == true {
+                        ShopView()
+                    }
+                }.edgesIgnoringSafeArea(.all)
+            }
+        }//.edgesIgnoringSafeArea(.all)
     
     func register() -> Bool {
-        var success: Bool = false
+        var success: Bool = true
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
             if((error) != nil) {
                 success = false
-            }
-            else {
-                success = true
             }
         }
         return success;
