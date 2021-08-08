@@ -1,0 +1,6 @@
+framework module Pods_E_commerce_nursery {
+  umbrella header "Pods-E-commerce-nursery-umbrella.h"
+
+  export *
+  module * { export * }
+}

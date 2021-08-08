@@ -3,12 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		BA670B5826BF421F0043E2A2 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA670B5726BF421E0043E2A2 /* HeaderView.swift */; };
 		BA670B5A26BF42880043E2A2 /* welcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA670B5926BF42880043E2A2 /* welcomePage.swift */; };
+		BA670B5C26BF79890043E2A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA670B5B26BF79890043E2A2 /* GoogleService-Info.plist */; };
+		BA670B5E26BF82030043E2A2 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA670B5D26BF82030043E2A2 /* ShopView.swift */; };
 		BA82DAFD26BE230F00C4049E /* E_commerce_nurseryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82DAFC26BE230F00C4049E /* E_commerce_nurseryApp.swift */; };
 		BA82DAFF26BE230F00C4049E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82DAFE26BE230F00C4049E /* ContentView.swift */; };
 		BA82DB0126BE231300C4049E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA82DB0026BE231300C4049E /* Assets.xcassets */; };
@@ -17,11 +19,16 @@
 		BA82DB1126BE5EF900C4049E /* RegisterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82DB1026BE5EF900C4049E /* RegisterButtonView.swift */; };
 		BA82DB1326BE641600C4049E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82DB1226BE641600C4049E /* LoginView.swift */; };
 		BA82DB1526BE642400C4049E /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82DB1426BE642400C4049E /* RegisterView.swift */; };
+		E2991D63E431E0CA1AECB1DA /* Pods_E_commerce_nursery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9538DCCD71067A96C531015C /* Pods_E_commerce_nursery.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9538DCCD71067A96C531015C /* Pods_E_commerce_nursery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_commerce_nursery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF2805F48CF0E242FF86522C /* Pods-E-commerce-nursery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-commerce-nursery.release.xcconfig"; path = "Target Support Files/Pods-E-commerce-nursery/Pods-E-commerce-nursery.release.xcconfig"; sourceTree = "<group>"; };
 		BA670B5726BF421E0043E2A2 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		BA670B5926BF42880043E2A2 /* welcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomePage.swift; sourceTree = "<group>"; };
+		BA670B5B26BF79890043E2A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BA670B5D26BF82030043E2A2 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
 		BA82DAF926BE230F00C4049E /* E-commerce-nursery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-commerce-nursery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA82DAFC26BE230F00C4049E /* E_commerce_nurseryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = E_commerce_nurseryApp.swift; sourceTree = "<group>"; };
 		BA82DAFE26BE230F00C4049E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +39,7 @@
 		BA82DB1026BE5EF900C4049E /* RegisterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterButtonView.swift; sourceTree = "<group>"; };
 		BA82DB1226BE641600C4049E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BA82DB1426BE642400C4049E /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		D18B63A5F8362C024124FE24 /* Pods-E-commerce-nursery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-commerce-nursery.debug.xcconfig"; path = "Target Support Files/Pods-E-commerce-nursery/Pods-E-commerce-nursery.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +47,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2991D63E431E0CA1AECB1DA /* Pods_E_commerce_nursery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24125AB25204584D4513A386 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D18B63A5F8362C024124FE24 /* Pods-E-commerce-nursery.debug.xcconfig */,
+				AF2805F48CF0E242FF86522C /* Pods-E-commerce-nursery.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BA82DAF026BE230F00C4049E = {
 			isa = PBXGroup;
 			children = (
 				BA82DAFB26BE230F00C4049E /* E-commerce-nursery */,
 				BA82DAFA26BE230F00C4049E /* Products */,
+				24125AB25204584D4513A386 /* Pods */,
+				D483487C0DDD4C7069448980 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +87,7 @@
 				BA82DB0C26BE270300C4049E /* App */,
 				BA82DB0026BE231300C4049E /* Assets.xcassets */,
 				BA82DB0526BE231300C4049E /* Info.plist */,
+				BA670B5B26BF79890043E2A2 /* GoogleService-Info.plist */,
 				BA82DB0226BE231300C4049E /* Preview Content */,
 			);
 			path = "E-commerce-nursery";
@@ -99,8 +120,17 @@
 				BA82DB0E26BE5EE600C4049E /* LoginButtonView.swift */,
 				BA82DB1426BE642400C4049E /* RegisterView.swift */,
 				BA82DB1226BE641600C4049E /* LoginView.swift */,
+				BA670B5D26BF82030043E2A2 /* ShopView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D483487C0DDD4C7069448980 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9538DCCD71067A96C531015C /* Pods_E_commerce_nursery.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA82DB0826BE231300C4049E /* Build configuration list for PBXNativeTarget "E-commerce-nursery" */;
 			buildPhases = (
+				38D8933E769820DBFBE18BE3 /* [CP] Check Pods Manifest.lock */,
 				BA82DAF526BE230F00C4049E /* Sources */,
 				BA82DAF626BE230F00C4049E /* Frameworks */,
 				BA82DAF726BE230F00C4049E /* Resources */,
+				8C19D3C19A662ADEA31D2B5C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,10 +194,53 @@
 			files = (
 				BA82DB0426BE231300C4049E /* Preview Assets.xcassets in Resources */,
 				BA82DB0126BE231300C4049E /* Assets.xcassets in Resources */,
+				BA670B5C26BF79890043E2A2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38D8933E769820DBFBE18BE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-E-commerce-nursery-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C19D3C19A662ADEA31D2B5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-E-commerce-nursery/Pods-E-commerce-nursery-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-E-commerce-nursery/Pods-E-commerce-nursery-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-E-commerce-nursery/Pods-E-commerce-nursery-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BA82DAF526BE230F00C4049E /* Sources */ = {
@@ -175,6 +250,7 @@
 				BA82DB0F26BE5EE600C4049E /* LoginButtonView.swift in Sources */,
 				BA82DB1126BE5EF900C4049E /* RegisterButtonView.swift in Sources */,
 				BA82DAFF26BE230F00C4049E /* ContentView.swift in Sources */,
+				BA670B5E26BF82030043E2A2 /* ShopView.swift in Sources */,
 				BA82DB1526BE642400C4049E /* RegisterView.swift in Sources */,
 				BA82DB1326BE641600C4049E /* LoginView.swift in Sources */,
 				BA670B5A26BF42880043E2A2 /* welcomePage.swift in Sources */,
@@ -304,6 +380,7 @@
 		};
 		BA82DB0926BE231300C4049E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D18B63A5F8362C024124FE24 /* Pods-E-commerce-nursery.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,6 +402,7 @@
 		};
 		BA82DB0A26BE231300C4049E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF2805F48CF0E242FF86522C /* Pods-E-commerce-nursery.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
