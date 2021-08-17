@@ -18,7 +18,7 @@ struct welcomePage: View {
                         .overlay(GeometryReader{ geometry in
                             HeaderView(text: "Support local nurseries", color: Color.white, fontSize: Font.title, fontWeight: Font.Weight.bold) // sized based on first
                                 .frame(width: geometry.size.width, height: geometry.size.height*0.3)
-                            HeaderView(text: "Shop at a local nursery today", color: Color.white, fontSize: Font.title3, fontWeight: Font.Weight.light) // sized based on first
+                            HeaderView(text: "Find affordable and quality plants today", color: Color.white, fontSize: Font.title3, fontWeight: Font.Weight.light) // sized based on first
                                 .frame(width: geometry.size.width, height: geometry.size.height*0.4)
                             RegisterButtonView()
                                 .frame(width: geometry.size.width, height: geometry.size.height*1.55)

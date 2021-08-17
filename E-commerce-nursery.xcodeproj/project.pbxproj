@@ -19,6 +19,7 @@
 		BA82DB1126BE5EF900C4049E /* RegisterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82DB1026BE5EF900C4049E /* RegisterButtonView.swift */; };
 		BA82DB1326BE641600C4049E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82DB1226BE641600C4049E /* LoginView.swift */; };
 		BA82DB1526BE642400C4049E /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82DB1426BE642400C4049E /* RegisterView.swift */; };
+		BA8E1D8426CB883A009565E4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8E1D8326CB883A009565E4 /* Constants.swift */; };
 		E2991D63E431E0CA1AECB1DA /* Pods_E_commerce_nursery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9538DCCD71067A96C531015C /* Pods_E_commerce_nursery.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		BA82DB1026BE5EF900C4049E /* RegisterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterButtonView.swift; sourceTree = "<group>"; };
 		BA82DB1226BE641600C4049E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BA82DB1426BE642400C4049E /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		BA8E1D8326CB883A009565E4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D18B63A5F8362C024124FE24 /* Pods-E-commerce-nursery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-commerce-nursery.debug.xcconfig"; path = "Target Support Files/Pods-E-commerce-nursery/Pods-E-commerce-nursery.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,7 +86,9 @@
 		BA82DAFB26BE230F00C4049E /* E-commerce-nursery */ = {
 			isa = PBXGroup;
 			children = (
+				BA82DB0D26BE5ED200C4049E /* View */,
 				BA82DB0C26BE270300C4049E /* App */,
+				BA8E1D8226CB880F009565E4 /* Utilities */,
 				BA82DB0026BE231300C4049E /* Assets.xcassets */,
 				BA82DB0526BE231300C4049E /* Info.plist */,
 				BA670B5B26BF79890043E2A2 /* GoogleService-Info.plist */,
@@ -108,7 +112,6 @@
 				BA670B5926BF42880043E2A2 /* welcomePage.swift */,
 				BA82DAFE26BE230F00C4049E /* ContentView.swift */,
 				BA82DAFC26BE230F00C4049E /* E_commerce_nurseryApp.swift */,
-				BA82DB0D26BE5ED200C4049E /* View */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -116,13 +119,45 @@
 		BA82DB0D26BE5ED200C4049E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BA82DB1026BE5EF900C4049E /* RegisterButtonView.swift */,
-				BA82DB0E26BE5EE600C4049E /* LoginButtonView.swift */,
-				BA82DB1426BE642400C4049E /* RegisterView.swift */,
-				BA82DB1226BE641600C4049E /* LoginView.swift */,
+				BA8E1D7E26CB86D2009565E4 /* Authentication */,
 				BA670B5D26BF82030043E2A2 /* ShopView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		BA8E1D7E26CB86D2009565E4 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				BA8E1D8026CB8700009565E4 /* Registration */,
+				BA8E1D8126CB8727009565E4 /* Login */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		BA8E1D8026CB8700009565E4 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				BA82DB1026BE5EF900C4049E /* RegisterButtonView.swift */,
+				BA82DB1426BE642400C4049E /* RegisterView.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		BA8E1D8126CB8727009565E4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BA82DB0E26BE5EE600C4049E /* LoginButtonView.swift */,
+				BA82DB1226BE641600C4049E /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		BA8E1D8226CB880F009565E4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BA8E1D8326CB883A009565E4 /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		D483487C0DDD4C7069448980 /* Frameworks */ = {
@@ -252,6 +287,7 @@
 				BA82DAFF26BE230F00C4049E /* ContentView.swift in Sources */,
 				BA670B5E26BF82030043E2A2 /* ShopView.swift in Sources */,
 				BA82DB1526BE642400C4049E /* RegisterView.swift in Sources */,
+				BA8E1D8426CB883A009565E4 /* Constants.swift in Sources */,
 				BA82DB1326BE641600C4049E /* LoginView.swift in Sources */,
 				BA670B5A26BF42880043E2A2 /* welcomePage.swift in Sources */,
 				BA82DAFD26BE230F00C4049E /* E_commerce_nurseryApp.swift in Sources */,
