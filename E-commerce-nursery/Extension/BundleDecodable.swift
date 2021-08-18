@@ -5,7 +5,7 @@
 //  Created by Ruchir on 8/17/21.
 //
 
-import Foundation
+import SwiftUI
 
 
 extension Bundle {
