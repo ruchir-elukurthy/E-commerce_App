@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "images": "vegetableGarden"
+    },
+    {
+        "id": 2,
+        "images": "pottedPlants"
+    },
+    {
+        "id": 3,
+        "images": "welcomePage"
+    },
+    {
+        "id": 4,
+        "images": "frontScreenGarden"
+    }
+]

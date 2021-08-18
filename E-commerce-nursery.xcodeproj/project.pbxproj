@@ -20,6 +20,10 @@
 		BA82DB1326BE641600C4049E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82DB1226BE641600C4049E /* LoginView.swift */; };
 		BA82DB1526BE642400C4049E /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82DB1426BE642400C4049E /* RegisterView.swift */; };
 		BA8E1D8426CB883A009565E4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8E1D8326CB883A009565E4 /* Constants.swift */; };
+		BA907B4826CC61660046B655 /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA907B4726CC61660046B655 /* NavBarView.swift */; };
+		BA907B4C26CC9E520046B655 /* gardenImages.json in Resources */ = {isa = PBXBuildFile; fileRef = BA907B4B26CC9E520046B655 /* gardenImages.json */; };
+		BA907B4F26CC9F870046B655 /* PlantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA907B4E26CC9F870046B655 /* PlantModel.swift */; };
+		BA907B5226CCA0080046B655 /* BundleDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA907B5126CCA0080046B655 /* BundleDecodable.swift */; };
 		E2991D63E431E0CA1AECB1DA /* Pods_E_commerce_nursery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9538DCCD71067A96C531015C /* Pods_E_commerce_nursery.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +45,10 @@
 		BA82DB1226BE641600C4049E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BA82DB1426BE642400C4049E /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		BA8E1D8326CB883A009565E4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BA907B4726CC61660046B655 /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
+		BA907B4B26CC9E520046B655 /* gardenImages.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = gardenImages.json; sourceTree = "<group>"; };
+		BA907B4E26CC9F870046B655 /* PlantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantModel.swift; sourceTree = "<group>"; };
+		BA907B5126CCA0080046B655 /* BundleDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleDecodable.swift; sourceTree = "<group>"; };
 		D18B63A5F8362C024124FE24 /* Pods-E-commerce-nursery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-commerce-nursery.debug.xcconfig"; path = "Target Support Files/Pods-E-commerce-nursery/Pods-E-commerce-nursery.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,8 +94,11 @@
 		BA82DAFB26BE230F00C4049E /* E-commerce-nursery */ = {
 			isa = PBXGroup;
 			children = (
+				BA907B5026CC9FF20046B655 /* Extension */,
+				BA907B4D26CC9F700046B655 /* Model */,
 				BA82DB0D26BE5ED200C4049E /* View */,
 				BA82DB0C26BE270300C4049E /* App */,
+				BA907B4A26CC9D590046B655 /* Data */,
 				BA8E1D8226CB880F009565E4 /* Utilities */,
 				BA82DB0026BE231300C4049E /* Assets.xcassets */,
 				BA82DB0526BE231300C4049E /* Info.plist */,
@@ -120,7 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				BA8E1D7E26CB86D2009565E4 /* Authentication */,
-				BA670B5D26BF82030043E2A2 /* ShopView.swift */,
+				BA907B4926CC79C00046B655 /* Shopping */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -158,6 +169,39 @@
 				BA8E1D8326CB883A009565E4 /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BA907B4926CC79C00046B655 /* Shopping */ = {
+			isa = PBXGroup;
+			children = (
+				BA670B5D26BF82030043E2A2 /* ShopView.swift */,
+				BA907B4726CC61660046B655 /* NavBarView.swift */,
+			);
+			path = Shopping;
+			sourceTree = "<group>";
+		};
+		BA907B4A26CC9D590046B655 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BA907B4B26CC9E520046B655 /* gardenImages.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BA907B4D26CC9F700046B655 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA907B4E26CC9F870046B655 /* PlantModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA907B5026CC9FF20046B655 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BA907B5126CCA0080046B655 /* BundleDecodable.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		D483487C0DDD4C7069448980 /* Frameworks */ = {
@@ -227,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA907B4C26CC9E520046B655 /* gardenImages.json in Resources */,
 				BA82DB0426BE231300C4049E /* Preview Assets.xcassets in Resources */,
 				BA82DB0126BE231300C4049E /* Assets.xcassets in Resources */,
 				BA670B5C26BF79890043E2A2 /* GoogleService-Info.plist in Resources */,
@@ -283,11 +328,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA82DB0F26BE5EE600C4049E /* LoginButtonView.swift in Sources */,
+				BA907B5226CCA0080046B655 /* BundleDecodable.swift in Sources */,
 				BA82DB1126BE5EF900C4049E /* RegisterButtonView.swift in Sources */,
 				BA82DAFF26BE230F00C4049E /* ContentView.swift in Sources */,
 				BA670B5E26BF82030043E2A2 /* ShopView.swift in Sources */,
 				BA82DB1526BE642400C4049E /* RegisterView.swift in Sources */,
+				BA907B4826CC61660046B655 /* NavBarView.swift in Sources */,
 				BA8E1D8426CB883A009565E4 /* Constants.swift in Sources */,
+				BA907B4F26CC9F870046B655 /* PlantModel.swift in Sources */,
 				BA82DB1326BE641600C4049E /* LoginView.swift in Sources */,
 				BA670B5A26BF42880043E2A2 /* welcomePage.swift in Sources */,
 				BA82DAFD26BE230F00C4049E /* E_commerce_nurseryApp.swift in Sources */,
