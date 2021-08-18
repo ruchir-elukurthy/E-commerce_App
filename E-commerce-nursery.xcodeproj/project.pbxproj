@@ -19,6 +19,9 @@
 		BA82DB1126BE5EF900C4049E /* RegisterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82DB1026BE5EF900C4049E /* RegisterButtonView.swift */; };
 		BA82DB1326BE641600C4049E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82DB1226BE641600C4049E /* LoginView.swift */; };
 		BA82DB1526BE642400C4049E /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82DB1426BE642400C4049E /* RegisterView.swift */; };
+		BA868D0F26CDACF3001D4979 /* NurseryCategories.json in Resources */ = {isa = PBXBuildFile; fileRef = BA868D0E26CDACF3001D4979 /* NurseryCategories.json */; };
+		BA868D1126CDB179001D4979 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA868D1026CDB179001D4979 /* CategoryModel.swift */; };
+		BA868D1326CDB1D5001D4979 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA868D1226CDB1D5001D4979 /* CategoryView.swift */; };
 		BA8E1D8426CB883A009565E4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8E1D8326CB883A009565E4 /* Constants.swift */; };
 		BA907B4826CC61660046B655 /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA907B4726CC61660046B655 /* NavBarView.swift */; };
 		BA907B4C26CC9E520046B655 /* gardenImages.json in Resources */ = {isa = PBXBuildFile; fileRef = BA907B4B26CC9E520046B655 /* gardenImages.json */; };
@@ -45,6 +48,9 @@
 		BA82DB1026BE5EF900C4049E /* RegisterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterButtonView.swift; sourceTree = "<group>"; };
 		BA82DB1226BE641600C4049E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BA82DB1426BE642400C4049E /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		BA868D0E26CDACF3001D4979 /* NurseryCategories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NurseryCategories.json; sourceTree = "<group>"; };
+		BA868D1026CDB179001D4979 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		BA868D1226CDB1D5001D4979 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		BA8E1D8326CB883A009565E4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BA907B4726CC61660046B655 /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
 		BA907B4B26CC9E520046B655 /* gardenImages.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = gardenImages.json; sourceTree = "<group>"; };
@@ -179,6 +185,7 @@
 				BA670B5D26BF82030043E2A2 /* ShopView.swift */,
 				BA907B4726CC61660046B655 /* NavBarView.swift */,
 				BA907B5326CCA2130046B655 /* TabImageView.swift */,
+				BA868D1226CDB1D5001D4979 /* CategoryView.swift */,
 			);
 			path = Shopping;
 			sourceTree = "<group>";
@@ -187,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				BA907B4B26CC9E520046B655 /* gardenImages.json */,
+				BA868D0E26CDACF3001D4979 /* NurseryCategories.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -195,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				BA907B4E26CC9F870046B655 /* PlantModel.swift */,
+				BA868D1026CDB179001D4979 /* CategoryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -274,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA868D0F26CDACF3001D4979 /* NurseryCategories.json in Resources */,
 				BA907B4C26CC9E520046B655 /* gardenImages.json in Resources */,
 				BA82DB0426BE231300C4049E /* Preview Assets.xcassets in Resources */,
 				BA82DB0126BE231300C4049E /* Assets.xcassets in Resources */,
@@ -336,6 +346,7 @@
 				BA82DAFF26BE230F00C4049E /* ContentView.swift in Sources */,
 				BA907B5426CCA2130046B655 /* TabImageView.swift in Sources */,
 				BA670B5E26BF82030043E2A2 /* ShopView.swift in Sources */,
+				BA868D1326CDB1D5001D4979 /* CategoryView.swift in Sources */,
 				BA82DB1526BE642400C4049E /* RegisterView.swift in Sources */,
 				BA907B4826CC61660046B655 /* NavBarView.swift in Sources */,
 				BA8E1D8426CB883A009565E4 /* Constants.swift in Sources */,
@@ -343,6 +354,7 @@
 				BA82DB1326BE641600C4049E /* LoginView.swift in Sources */,
 				BA670B5A26BF42880043E2A2 /* welcomePage.swift in Sources */,
 				BA82DAFD26BE230F00C4049E /* E_commerce_nurseryApp.swift in Sources */,
+				BA868D1126CDB179001D4979 /* CategoryModel.swift in Sources */,
 				BA670B5826BF421F0043E2A2 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

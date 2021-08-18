@@ -17,10 +17,10 @@ struct TabImageView: View {
                 Image(plants[item].image)
                     .resizable()
                     .scaledToFit()
-//                    .padding(.top,10)
-//                    .padding(.horizontal,15)
+                    .frame(width: 400, height: 265)
+                    .cornerRadius(12.0)
             }
-        }.tabViewStyle(PageTabViewStyle())
+        }.tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
     }
 }
 

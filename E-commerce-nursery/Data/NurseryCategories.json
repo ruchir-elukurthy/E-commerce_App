@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name" : "Plants"
+    },
+    {
+        "id": 2,
+        "name" : "Flowers"
+    },
+    {
+        "id": 3,
+        "name" : "Seeds"
+    },
+    {
+        "id": 4,
+        "name" : "Accessories"
+    },
+    {
+        "id": 5,
+        "name" : "Clothing"
+    },
+    {
+        "id": 6,
+        "name" : "Footwear"
+    },
+    {
+        "id": 7,
+        "name" : "Others"
+    }
+]
