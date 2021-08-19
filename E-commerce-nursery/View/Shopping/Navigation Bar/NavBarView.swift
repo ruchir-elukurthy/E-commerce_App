@@ -9,8 +9,6 @@ import SwiftUI
 
 struct NavBarView: View {
     
-    //let plants : [Plant]
-    
     var body: some View {
         HStack {
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {

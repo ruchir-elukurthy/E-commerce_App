@@ -29,11 +29,13 @@ struct LoginView: View {
                 .background(Color(UIColor.lightGray))
                 .cornerRadius(100.0)
                 .padding(.bottom, 20)
+                .autocapitalization(.none)
             SecureField("Password", text: $password)
                 .padding()
                 .background(Color(UIColor.lightGray))
                 .cornerRadius(100.0)
                 .padding(.bottom, 20)
+                .autocapitalization(.none)
         
             if register() == true {
                 NavigationLink(destination: ShopView()) {

@@ -8,27 +8,31 @@
 import SwiftUI
 
 struct ShopView: View {
+    
     var body: some View {
-        ZStack {
-            VStack(spacing:0) {
-                NavBarView()
-                    .padding(.horizontal, 15)
-                    .padding(.bottom)
-                    .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
-                    .background(Color.white)
-                    .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 5)
-                Spacer(minLength: 30)
-                ScrollView(.vertical, showsIndicators: false) {
-                    VStack(spacing: 0) {
-                        TabImageView()
-                            .frame(width: 350, height: 230)
-                            .cornerRadius(12.0)
-                            .padding(.bottom)
-                        }
-                        GridView()
+        VStack(spacing:0) {
+            NavBarView()
+                .padding(.horizontal, 15)
+                .padding(.bottom)
+                .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
+                .background(Color.white)
+                .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 5)
+            Spacer(minLength: 30)
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(spacing: 0) {
+                    TabImageView()
+                        .frame(width: 350, height: 230)
+                        .cornerRadius(12.0)
+                        .padding(.bottom)
+                    GridView()
                     }
-            }.background(SwiftUI.Color.white.ignoresSafeArea(.all,edges: .all))
-        }.ignoresSafeArea(.all, edges: .top)
+            }
+            Spacer()
+            TabBarView()
+                .padding()
+        }
+        .background(SwiftUI.Color.white.ignoresSafeArea(.all,edges: .all))
+        .ignoresSafeArea(.all)
     }
 }
 
