@@ -23,9 +23,11 @@ struct ShopView: View {
                         TabImageView()
                             .frame(width: 350, height: 230)
                             .cornerRadius(12.0)
+                            .padding(.bottom)
                         }
+                        GridView()
                     }
-            }.background(colorBackground.ignoresSafeArea(.all,edges: .all))
+            }.background(SwiftUI.Color.white.ignoresSafeArea(.all,edges: .all))
         }.ignoresSafeArea(.all, edges: .top)
     }
 }

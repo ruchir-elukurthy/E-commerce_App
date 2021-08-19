@@ -25,7 +25,6 @@ struct TabImageView: View {
 }
 
 struct TabImageView_Previews: PreviewProvider {
-    let plants : Plant
     static var previews: some View {
         TabImageView()
             .previewLayout(.fixed(width: 400, height: 265))

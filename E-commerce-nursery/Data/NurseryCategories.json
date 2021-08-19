@@ -1,30 +1,30 @@
 [
     {
         "id": 1,
-        "name" : "Plants"
+        "name": "Plants"
     },
     {
         "id": 2,
-        "name" : "Flowers"
+        "name": "Flowers"
     },
     {
         "id": 3,
-        "name" : "Seeds"
+        "name": "Seeds"
     },
     {
         "id": 4,
-        "name" : "Accessories"
+        "name": "Accessories"
     },
     {
         "id": 5,
-        "name" : "Clothing"
+        "name": "Clothing"
     },
     {
         "id": 6,
-        "name" : "Footwear"
+        "name": "Footwear"
     },
     {
         "id": 7,
-        "name" : "Others"
+        "name": "Others"
     }
 ]
