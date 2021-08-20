@@ -25,7 +25,6 @@ struct GridView: View {
                     }
                 }
             }
-            .background(Color.gray.opacity(0.3))
             .frame(height: 150)
         }
     }

@@ -10,16 +10,16 @@ import SwiftUI
 struct ShopView: View {
     
     var body: some View {
-        VStack(spacing:0) {
-            NavBarView()
-                .padding(.horizontal, 15)
-                .padding(.bottom)
-                .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
-                .background(Color.white)
-                .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 5)
-            Spacer(minLength: 30)
+        VStack() {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(spacing: 0) {
+                    NavBarView()
+                        .padding(.horizontal, 15)
+                        .padding(.bottom)
+                        .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
+                        .background(Color.white)
+                        .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 5)
+                    Spacer(minLength: 30)
                     TabImageView()
                         .frame(width: 350, height: 230)
                         .cornerRadius(12.0)
@@ -38,14 +38,14 @@ struct ShopView: View {
                             }
                     })
                 }
-                
             }
             Spacer()
             TabBarView()
                 .padding()
         }
-        .background(Color.gray.opacity(0.1).ignoresSafeArea(.all,edges: .all))
+        .background(Color.gray.opacity(0.1))
         .ignoresSafeArea(.all)
+        .navigationBarHidden(true)
     }
 }
 

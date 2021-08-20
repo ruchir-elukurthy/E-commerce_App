@@ -30,7 +30,7 @@ struct TabBarView: View {
                             Spacer()
                         }
                         else {
-                            NavigationLink(destination: UserProfileView())  {
+                            NavigationLink(destination: ProductDetailView())  {
                                 Image(systemName: tabBarImageItems[num])
                                     .font(.system(size: 24, weight: .bold))
                                     .foregroundColor(selectedItem == num ? Color(.black) : .gray)
