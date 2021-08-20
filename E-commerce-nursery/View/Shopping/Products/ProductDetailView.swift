@@ -9,10 +9,10 @@ import SwiftUI
 
 struct ProductDetailView: View {
     var body: some View {
-        VStack() {
+        VStack {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(spacing: 0) {
-                        NavBarProductView()
+                    NavBarProductView()
                         .padding(.horizontal, 15)
                         .padding(.bottom)
                         .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
@@ -20,8 +20,16 @@ struct ProductDetailView: View {
                         .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 5)
                     Spacer(minLength: 30)
                 }
+                VStack {
+                    Text("Plants")
+                        .padding(.trailing,100)
+                    Text("Snake Plant")
+                        .font(.title)
+                        .fontWeight(.bold)
+                }.padding(.trailing,200)
+                
             }
-        }
+        }.ignoresSafeArea(.all)
     }
 }
 
