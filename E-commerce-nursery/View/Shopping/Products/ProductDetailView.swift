@@ -28,8 +28,11 @@ struct ProductDetailView: View {
                         .fontWeight(.bold)
                 }.padding(.trailing,200)
                 
+                ProductImageView()
             }
-        }.ignoresSafeArea(.all)
+        }
+        .background(Color.gray.opacity(0.1))
+        .ignoresSafeArea(.all)
     }
 }
 

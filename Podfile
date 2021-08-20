@@ -6,6 +6,6 @@ target 'E-commerce-nursery' do
   use_frameworks!
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
-  # Pods for E-commerce-nursery
+  pod 'IQKeyboardManagerSwift'
 
 end

@@ -7,12 +7,14 @@
 
 import SwiftUI
 import Firebase
+import IQKeyboardManagerSwift
 
 
 @main
 struct E_commerce_nurseryApp: App {
     init() {
-      FirebaseApp.configure()
+        FirebaseApp.configure()
+        IQKeyboardManager.shared.enable = true
     }
     var body: some Scene {
         WindowGroup {
