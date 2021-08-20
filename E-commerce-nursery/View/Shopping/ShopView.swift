@@ -25,13 +25,26 @@ struct ShopView: View {
                         .cornerRadius(12.0)
                         .padding(.bottom)
                     GridView()
+                        .padding(.bottom)
+                    HStack {
+                        Text("Buy now")
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .padding(.trailing, 230)
                     }
+                    LazyVGrid(columns: Array(repeating: GridItem(.flexible(),spacing: 10), count: 2), content: {
+                            ForEach(0..<5) {num in 
+                                ProductItemView(index: num)
+                            }
+                    })
+                }
+                
             }
             Spacer()
             TabBarView()
                 .padding()
         }
-        .background(SwiftUI.Color.white.ignoresSafeArea(.all,edges: .all))
+        .background(Color.gray.opacity(0.1).ignoresSafeArea(.all,edges: .all))
         .ignoresSafeArea(.all)
     }
 }

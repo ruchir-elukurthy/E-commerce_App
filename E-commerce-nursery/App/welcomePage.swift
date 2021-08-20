@@ -30,7 +30,7 @@ struct welcomePage: View {
                         .edgesIgnoringSafeArea(.all)
                 }
             }
-        }
+        }.accentColor(.blue)
     }
 }
 
