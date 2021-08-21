@@ -10,8 +10,18 @@ import SwiftUI
 
 struct LoginButtonView: View {
     var body: some View {
-        ZStack {
-            NavigationLink(destination: LoginView()) {
+//        ZStack {
+//            NavigationLink(destination: LoginView()) {
+//            Text("LOGIN")
+//                .font(.headline)
+//                .foregroundColor(.white)
+//                .padding()
+//                .frame(width: 220, height: 60)
+//                .background(Color.green)
+//                .cornerRadius(15.0)
+//            }
+//        }
+        Button(action: {}, label: {
             Text("LOGIN")
                 .font(.headline)
                 .foregroundColor(.white)
@@ -19,8 +29,7 @@ struct LoginButtonView: View {
                 .frame(width: 220, height: 60)
                 .background(Color.green)
                 .cornerRadius(15.0)
-            }
-        }
+        })
     }
 }
 

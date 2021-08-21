@@ -18,7 +18,7 @@ struct ProductDetailView: View {
                         .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
                         .background(Color.white)
                         .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 5)
-                    Spacer(minLength: 30)
+                    
                 }
                 VStack {
                     Text("Plants")
@@ -29,7 +29,15 @@ struct ProductDetailView: View {
                 }.padding(.trailing,200)
                 
                 ProductImageView()
+                RatingView()
+                    .padding(.trailing,250)
+                    .padding(.bottom,10)
+                ProductDescriptionView()
+                    .padding(.leading,10)
+                    .padding(.trailing,10)
             }
+            CartAdditionButton()
+                .padding(.bottom,18)
         }
         .background(Color.gray.opacity(0.1))
         .ignoresSafeArea(.all)

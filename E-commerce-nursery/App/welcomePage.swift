@@ -10,27 +10,48 @@ import SwiftUI
 struct welcomePage: View {
     var body: some View {
         NavigationView {
-            VStack {
-                GeometryReader { geo in
-                    Image("welcomeScreen")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .overlay(GeometryReader{ geometry in
-                            HeaderView(text: "Support local nurseries", color: Color.white, fontSize: Font.title, fontWeight: Font.Weight.bold) // sized based on first
-                                .frame(width: geometry.size.width, height: geometry.size.height*0.3)
-                            HeaderView(text: "Find affordable and quality plants today", color: Color.white, fontSize: Font.title3, fontWeight: Font.Weight.light) // sized based on first
-                                .frame(width: geometry.size.width, height: geometry.size.height*0.4)
-                            RegisterButtonView()
-                                .frame(width: geometry.size.width, height: geometry.size.height*1.55)
-                            LoginButtonView()
-                                .frame(width: geometry.size.width, height: geometry.size.height*1.8)
-                        })
-        
-                        .frame(width: geo.size.width)
-                        .edgesIgnoringSafeArea(.all)
+            ZStack {
+                Image("welcome")
+                    .resizable()
+                    .scaledToFill()
+                VStack (spacing: 0) {
+                    Text("Support local nurseries")
+                        .font(.title)
+                        .foregroundColor(.white)
+                        .fontWeight(.bold)
+                        .padding(.trailing,70)
+                        .padding(.bottom,30)
+                    Text("Find affordable and quality plants today")
+                        .font(.title2)
+                        .foregroundColor(.white)
+                        .padding(.trailing,75)
+                }.padding(.bottom,300)
+                .padding(.trailing,95)
+                VStack (spacing: 30) {
+                    NavigationLink(destination: RegisterView()) {
+                    Text("REGISTER")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(width: 220, height: 60)
+                        .background(Color.green)
+                        .cornerRadius(15.0)
+                    }
+                    NavigationLink(destination: LoginView()) {
+                    Text("LOGIN")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(width: 220, height: 60)
+                        .background(Color.green)
+                        .cornerRadius(15.0)
+                    }
                 }
-            }
-        }.accentColor(.blue)
+                .padding(.top,400)
+                .padding(.trailing,160)
+                
+            }.ignoresSafeArea(.all)
+        }
     }
 }
 

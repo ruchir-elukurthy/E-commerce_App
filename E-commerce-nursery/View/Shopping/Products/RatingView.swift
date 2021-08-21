@@ -12,7 +12,11 @@ struct RatingView: View {
         VStack {
             Text("RATINGS")
                 .opacity(0.6)
-            Image(systemName: "star")
+            HStack(spacing: 0) {
+                ForEach(0..<5) { num in
+                    Image(systemName: "star")
+                }
+            }
         }
     }
 }

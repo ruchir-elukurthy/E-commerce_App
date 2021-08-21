@@ -11,12 +11,18 @@ struct NavBarView: View {
     
     var body: some View {
         HStack {
-            Spacer()
+            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Image(systemName: "magnifyingglass")
+                    .frame(width: 40, height: 35, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .accentColor(.black)
+                    
+            }).padding(.trailing, 30)
             Text("PlantHouse")
                 .font(.title2)
                 .fontWeight(.bold)
                 .padding(.leading, 30)
                 .foregroundColor(Color(red: 10 / 255, green: 132 / 255, blue: 10 / 255))
+                .padding(.leading,20)
             Spacer()
             
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {

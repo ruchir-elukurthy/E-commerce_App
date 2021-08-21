@@ -48,7 +48,7 @@ struct RegisterView: View {
                         .cornerRadius(15.0)
                 }
             }
-        }.edgesIgnoringSafeArea(.all)
+        }.padding(.bottom,80)
     }
     
     func register() -> Bool {
