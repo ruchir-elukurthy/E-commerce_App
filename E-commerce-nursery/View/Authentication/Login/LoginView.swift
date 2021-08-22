@@ -8,58 +8,102 @@
 import SwiftUI
 import Firebase
 
+class RegisterViewModel: ObservableObject {
+    var email: String = ""
+    var password: String = ""
 
+    @Published var signedIn = false
+    
+    var isSignedIn: Bool {
+        return Auth.auth().currentUser != nil
+    }
+
+    func login(email: String, password: String) -> Bool {
+        Auth.auth().signIn(withEmail: email, password: password) { result, error in
+
+            if error != nil {
+                print(error?.localizedDescription)
+            } else {
+                self.signedIn = true
+            }
+        }
+        return self.signedIn
+    }
+
+    func register(email: String, password: String) {
+
+        Auth.auth().createUser(withEmail: email, password: password) { [weak self] authResult, error in
+            guard authResult != nil, error == nil else {
+                return
+            }
+            DispatchQueue.main.async {
+                self?.signedIn = true
+            }
+        }
+    }
+}
 
 struct LoginView: View {
     
     @State var email: String = ""
     @State var password: String = ""
-    @State var didLogIn: Bool = true
+    @State var didLogIn: Bool = false
+    @EnvironmentObject var viewModel : RegisterViewModel
+    var count: Int = 0
     
     var body: some View {
+        
     VStack {
         Text("Welcome!")
            .font(.largeTitle)
            .fontWeight(.semibold)
+        
         Image("registerScreen")
             .resizable()
             .aspectRatio(contentMode: .fill)
             .frame(width: 200, height: 300)
             .clipShape(Circle())
             .cornerRadius(150)
-            TextField("Email", text: $email)
-                .padding()
-                .background(Color(UIColor.lightGray))
-                .cornerRadius(100.0)
-                .padding(.bottom, 20)
-                .autocapitalization(.none)
-            SecureField("Password", text: $password)
-                .padding()
-                .background(Color(UIColor.lightGray))
-                .cornerRadius(100.0)
-                .padding(.bottom, 20)
-                .autocapitalization(.none)
+        TextField("Email", text: $email)
+        .padding()
+        .background(Color(UIColor.lightGray))
+        .cornerRadius(100.0)
+        .padding(.bottom, 20)
+        .autocapitalization(.none)
+        .disableAutocorrection(true)
+
         
-            if register(email: email,password: password) == true {
-                NavigationLink(destination: ShopView()) {
-                    LoginButtonView()
+        SecureField("Password", text: $password)
+                .padding()
+                .background(Color(UIColor.lightGray))
+                .cornerRadius(100.0)
+                .padding(.bottom, 20)
+                .autocapitalization(.none)
+        NavigationLink(destination: ShopView(), isActive: $didLogIn) {
+                EmptyView()
+            }
+            
+            Button("LOGIN")
+            {
+                if(email != "" && password != "") {
+                    if viewModel.login(email: email, password: password) == true
+                    {
+                        didLogIn = true
+                    }
                 }
             }
-        }.padding(.bottom,80)
-    }
-    
-    func register(email: String, password: String) -> Bool {
-        Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
-            if result != nil {
-                return
-            }
-            else {
-                didLogIn = false
-            }
+            .font(.headline)
+            .foregroundColor(.white)
+            .padding()
+            .frame(width: 220, height: 60)
+            .background(Color.green)
+            .cornerRadius(15.0)
         }
-        return didLogIn
+    .padding(.bottom,180)
+    .accentColor( .black) 
     }
 }
+
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()

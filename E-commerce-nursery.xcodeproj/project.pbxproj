@@ -14,8 +14,6 @@
 		BA82DAFF26BE230F00C4049E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82DAFE26BE230F00C4049E /* ContentView.swift */; };
 		BA82DB0126BE231300C4049E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA82DB0026BE231300C4049E /* Assets.xcassets */; };
 		BA82DB0426BE231300C4049E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA82DB0326BE231300C4049E /* Preview Assets.xcassets */; };
-		BA82DB0F26BE5EE600C4049E /* LoginButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82DB0E26BE5EE600C4049E /* LoginButtonView.swift */; };
-		BA82DB1126BE5EF900C4049E /* RegisterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82DB1026BE5EF900C4049E /* RegisterButtonView.swift */; };
 		BA82DB1326BE641600C4049E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82DB1226BE641600C4049E /* LoginView.swift */; };
 		BA82DB1526BE642400C4049E /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82DB1426BE642400C4049E /* RegisterView.swift */; };
 		BA868D0F26CDACF3001D4979 /* NurseryCategories.json in Resources */ = {isa = PBXBuildFile; fileRef = BA868D0E26CDACF3001D4979 /* NurseryCategories.json */; };
@@ -53,8 +51,6 @@
 		BA82DB0026BE231300C4049E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA82DB0326BE231300C4049E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BA82DB0526BE231300C4049E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA82DB0E26BE5EE600C4049E /* LoginButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonView.swift; sourceTree = "<group>"; };
-		BA82DB1026BE5EF900C4049E /* RegisterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterButtonView.swift; sourceTree = "<group>"; };
 		BA82DB1226BE641600C4049E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BA82DB1426BE642400C4049E /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		BA868D0E26CDACF3001D4979 /* NurseryCategories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NurseryCategories.json; sourceTree = "<group>"; };
@@ -201,7 +197,6 @@
 		BA8E1D8026CB8700009565E4 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
-				BA82DB1026BE5EF900C4049E /* RegisterButtonView.swift */,
 				BA82DB1426BE642400C4049E /* RegisterView.swift */,
 			);
 			path = Registration;
@@ -210,7 +205,6 @@
 		BA8E1D8126CB8727009565E4 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				BA82DB0E26BE5EE600C4049E /* LoginButtonView.swift */,
 				BA82DB1226BE641600C4049E /* LoginView.swift */,
 			);
 			path = Login;
@@ -403,12 +397,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA82DB0F26BE5EE600C4049E /* LoginButtonView.swift in Sources */,
 				BA98B14826D04B1A00225891 /* ProductImageView.swift in Sources */,
 				BA907B5226CCA0080046B655 /* BundleDecodable.swift in Sources */,
 				BA98B14A26D052BC00225891 /* RatingView.swift in Sources */,
 				BA868D1726CE050D001D4979 /* SectionView.swift in Sources */,
-				BA82DB1126BE5EF900C4049E /* RegisterButtonView.swift in Sources */,
 				BA82DAFF26BE230F00C4049E /* ContentView.swift in Sources */,
 				BA907B5426CCA2130046B655 /* TabImageView.swift in Sources */,
 				BA921E6526CF898700244F0B /* NavBarProductView.swift in Sources */,

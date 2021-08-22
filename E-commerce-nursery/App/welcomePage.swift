@@ -29,29 +29,29 @@ struct welcomePage: View {
                 .padding(.trailing,95)
                 VStack (spacing: 30) {
                     NavigationLink(destination: RegisterView()) {
-                    Text("REGISTER")
-                        .font(.headline)
-                        .foregroundColor(.white)
-                        .padding()
-                        .frame(width: 220, height: 60)
-                        .background(Color.green)
-                        .cornerRadius(15.0)
+                        Text("REGISTER")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .padding()
+                            .frame(width: 220, height: 60)
+                            .background(Color.green)
+                            .cornerRadius(15.0)
                     }
                     NavigationLink(destination: LoginView()) {
-                    Text("LOGIN")
-                        .font(.headline)
-                        .foregroundColor(.white)
-                        .padding()
-                        .frame(width: 220, height: 60)
-                        .background(Color.green)
-                        .cornerRadius(15.0)
+                        Text("LOGIN")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .padding()
+                            .frame(width: 220, height: 60)
+                            .background(Color.green)
+                            .cornerRadius(15.0)
                     }
                 }
                 .padding(.top,400)
-                .padding(.trailing,160)
+                .padding(.trailing,180)
                 
             }.ignoresSafeArea(.all)
-        }
+        }.accentColor(.blue)
     }
 }
 

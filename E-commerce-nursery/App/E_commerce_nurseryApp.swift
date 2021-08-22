@@ -17,8 +17,9 @@ struct E_commerce_nurseryApp: App {
         IQKeyboardManager.shared.enable = true
     }
     var body: some Scene {
+        let viewModel = RegisterViewModel()
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(viewModel)
         }
     }
 }
