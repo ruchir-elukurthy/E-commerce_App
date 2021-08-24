@@ -10,7 +10,7 @@ import SwiftUI
 struct TabBarView: View {
     @State var selectedItem = 0
     
-    let tabBarImageItems = ["homekit", "magnifyingglass.circle", "plus.app.fill", "person", "gear"]
+    let tabBarImageItems = ["house", "magnifyingglass.circle", "plus.app.fill", "person", "gear"]
     
     var body: some View {
         

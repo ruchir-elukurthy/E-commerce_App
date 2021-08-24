@@ -223,12 +223,12 @@
 		BA907B4926CC79C00046B655 /* Shopping */ = {
 			isa = PBXGroup;
 			children = (
-				BA6BBAD126D379CC00FE5904 /* Cart */,
 				BA670B5D26BF82030043E2A2 /* ShopView.swift */,
 				BA868D1926CE0AD1001D4979 /* Navigation Bar */,
 				BA868D1A26CE0AE0001D4979 /* Tab View */,
 				BA868D1826CE0A15001D4979 /* Grid */,
 				BA921E5A26CEFC1A00244F0B /* Tab Bar */,
+				BA6BBAD126D379CC00FE5904 /* Cart */,
 				BA921E6326CF7F9C00244F0B /* Products */,
 			);
 			path = Shopping;
