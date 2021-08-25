@@ -12,7 +12,6 @@
 		BA670B5E26BF82030043E2A2 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA670B5D26BF82030043E2A2 /* ShopView.swift */; };
 		BA6BBAD326D379DF00FE5904 /* AddToCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6BBAD226D379DF00FE5904 /* AddToCartView.swift */; };
 		BA82DAFD26BE230F00C4049E /* E_commerce_nurseryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82DAFC26BE230F00C4049E /* E_commerce_nurseryApp.swift */; };
-		BA82DAFF26BE230F00C4049E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82DAFE26BE230F00C4049E /* ContentView.swift */; };
 		BA82DB0126BE231300C4049E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA82DB0026BE231300C4049E /* Assets.xcassets */; };
 		BA82DB0426BE231300C4049E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA82DB0326BE231300C4049E /* Preview Assets.xcassets */; };
 		BA82DB1326BE641600C4049E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA82DB1226BE641600C4049E /* LoginView.swift */; };
@@ -49,7 +48,6 @@
 		BA6BBAD226D379DF00FE5904 /* AddToCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCartView.swift; sourceTree = "<group>"; };
 		BA82DAF926BE230F00C4049E /* E-commerce-nursery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-commerce-nursery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA82DAFC26BE230F00C4049E /* E_commerce_nurseryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = E_commerce_nurseryApp.swift; sourceTree = "<group>"; };
-		BA82DAFE26BE230F00C4049E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BA82DB0026BE231300C4049E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA82DB0326BE231300C4049E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BA82DB0526BE231300C4049E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -153,7 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				BA670B5926BF42880043E2A2 /* welcomePage.swift */,
-				BA82DAFE26BE230F00C4049E /* ContentView.swift */,
 				BA82DAFC26BE230F00C4049E /* E_commerce_nurseryApp.swift */,
 			);
 			path = App;
@@ -412,7 +409,6 @@
 				BA907B5226CCA0080046B655 /* BundleDecodable.swift in Sources */,
 				BA98B14A26D052BC00225891 /* RatingView.swift in Sources */,
 				BA868D1726CE050D001D4979 /* SectionView.swift in Sources */,
-				BA82DAFF26BE230F00C4049E /* ContentView.swift in Sources */,
 				BA907B5426CCA2130046B655 /* TabImageView.swift in Sources */,
 				BA921E6526CF898700244F0B /* NavBarProductView.swift in Sources */,
 				BA921E5926CEE56F00244F0B /* TabBarView.swift in Sources */,

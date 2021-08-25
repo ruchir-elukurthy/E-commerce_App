@@ -18,16 +18,15 @@ class RegisterViewModel: ObservableObject {
         return Auth.auth().currentUser != nil
     }
 
-    func login(email: String, password: String) -> Bool {
-        Auth.auth().signIn(withEmail: email, password: password) { result, error in
-
-            if error != nil {
-                print(error?.localizedDescription)
-            } else {
-                self.signedIn = true
+    func login(email: String, password: String)  {
+        Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+            guard authResult != nil, error == nil else {
+                return
+            }
+            DispatchQueue.main.async {
+                self?.signedIn = true
             }
         }
-        return self.signedIn
     }
 
     func register(email: String, password: String) {
@@ -41,6 +40,12 @@ class RegisterViewModel: ObservableObject {
             }
         }
     }
+    
+    func signOut() {
+        try? Auth.auth().signOut()
+        
+        self.signedIn = false
+    }
 }
 
 struct LoginView: View {
@@ -49,7 +54,6 @@ struct LoginView: View {
     @State var password: String = ""
     @State var didLogIn: Bool = false
     @EnvironmentObject var viewModel : RegisterViewModel
-    var count: Int = 0
     
     var body: some View {
         
@@ -79,19 +83,22 @@ struct LoginView: View {
                 .cornerRadius(100.0)
                 .padding(.bottom, 20)
                 .autocapitalization(.none)
-        NavigationLink(destination: ShopView(), isActive: $didLogIn) {
-                EmptyView()
+        
+        Button(action: {
+            guard !email.isEmpty, !password.isEmpty else {
+                return
             }
-            
-            Button("LOGIN")
-            {
-                if(email != "" && password != "") {
-                    if viewModel.login(email: email, password: password) == true
-                    {
-                        didLogIn = true
-                    }
-                }
-            }
+            viewModel.login(email: email, password: password)
+        }, label: {
+            Text("Login")
+                .font(.headline)
+                .foregroundColor(.white)
+                .padding()
+                .frame(width: 220, height: 60)
+                .background(Color.green)
+                .cornerRadius(15.0)
+        })
+        NavigationLink("Register",destination: RegisterView())
             .font(.headline)
             .foregroundColor(.white)
             .padding()

@@ -8,50 +8,68 @@
 import SwiftUI
 
 struct welcomePage: View {
+    
+    @EnvironmentObject var viewModel : RegisterViewModel
+    
     var body: some View {
         NavigationView {
-            ZStack {
-                Image("welcome")
-                    .resizable()
-                    .scaledToFill()
-                VStack (spacing: 0) {
-                    Text("Support local nurseries")
-                        .font(.title)
-                        .foregroundColor(.white)
-                        .fontWeight(.bold)
-                        .padding(.trailing,70)
-                        .padding(.bottom,30)
-                    Text("Find affordable and quality plants today")
-                        .font(.title2)
-                        .foregroundColor(.white)
-                        .padding(.trailing,75)
-                }.padding(.bottom,300)
-                .padding(.trailing,95)
-                VStack (spacing: 30) {
-                    NavigationLink(destination: RegisterView()) {
-                        Text("REGISTER")
-                            .font(.headline)
-                            .foregroundColor(.white)
-                            .padding()
-                            .frame(width: 220, height: 60)
-                            .background(Color.green)
-                            .cornerRadius(15.0)
+//            ZStack {
+//                Image("welcome")
+//                    .resizable()
+//                    .scaledToFill()
+//                VStack (spacing: 0) {
+//                    Text("Support local nurseries")
+//                        .font(.title)
+//                        .foregroundColor(.white)
+//                        .fontWeight(.bold)
+//                        .padding(.trailing,70)
+//                        .padding(.bottom,30)
+//                    Text("Find affordable and quality plants today")
+//                        .font(.title2)
+//                        .foregroundColor(.white)
+//                        .padding(.trailing,75)
+//                }.padding(.bottom,300)
+//                .padding(.trailing,95)
+//                VStack (spacing: 30) {
+//                    NavigationLink(destination: RegisterView()) {
+//                        Text("REGISTER")
+//                            .font(.headline)
+//                            .foregroundColor(.white)
+//                            .padding()
+//                            .frame(width: 220, height: 60)
+//                            .background(Color.green)
+//                            .cornerRadius(15.0)
+//                    }
+//                    NavigationLink(destination: LoginView()) {
+//                        Text("LOGIN")
+//                            .font(.headline)
+//                            .foregroundColor(.white)
+//                            .padding()
+//                            .frame(width: 220, height: 60)
+//                            .background(Color.green)
+//                            .cornerRadius(15.0)
+//                    }
+//                }
+//                .padding(.top,400)
+//                .padding(.trailing,180)
+                VStack {
+                    if viewModel.isSignedIn {
+                        ShopView()
+                        Button(action: {
+                            viewModel.signOut()
+                        }, label: {
+                            Text("Sign Out")
+                        })
                     }
-                    NavigationLink(destination: LoginView()) {
-                        Text("LOGIN")
-                            .font(.headline)
-                            .foregroundColor(.white)
-                            .padding()
-                            .frame(width: 220, height: 60)
-                            .background(Color.green)
-                            .cornerRadius(15.0)
+                    else {
+                        LoginView()
                     }
                 }
-                .padding(.top,400)
-                .padding(.trailing,180)
-                
+                .onAppear {
+                    viewModel.signedIn = viewModel.isSignedIn
+                }
             }.ignoresSafeArea(.all)
-        }.accentColor(.blue)
+        //}.accentColor(.blue)
     }
 }
 
