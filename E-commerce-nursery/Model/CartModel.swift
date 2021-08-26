@@ -6,10 +6,17 @@
 //
 
 import Foundation
+import FirebaseFirestoreSwift
 
-struct CartItems: Identifiable {
-    var id: String = UUID().uuidString
+struct CartItems: Identifiable, Codable {
+    @DocumentID var id: String? = UUID().uuidString
     var user: String
     var name: String
     var price: String
+    
+    enum CodingKeys: String, CodingKey {
+        case user
+        case name
+        case price
+    }
 }

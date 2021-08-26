@@ -7,11 +7,21 @@
 
 import SwiftUI
 import FirebaseFirestore
+import FirebaseFirestoreSwift
 
 class CartViewModel: ObservableObject {
     @Published var products = [CartItems]()
     
     private var db = Firestore.firestore()
+    
+    func addData(product: CartItems) {
+        do {
+            let _ = try db.collection("products").addDocument(from: product)
+        }
+        catch {
+            print(error)
+        }
+    }
     
     func fetchData() {
         db.collection("products").addSnapshotListener { (querySnapshot, err) in
@@ -20,14 +30,16 @@ class CartViewModel: ObservableObject {
                 return
             }
             
-            self.products = documents.map { (QueryDocumentSnapshot) -> CartItems in
-                let data = QueryDocumentSnapshot.data()
+            self.products = documents.compactMap { (QueryDocumentSnapshot) -> CartItems? in
+                return try? QueryDocumentSnapshot.data(as: CartItems.self)
                 
-                let name = data["name"] as? String ?? ""
-                let price = data["price"] as? String ?? ""
-                let user = data["user"] as? String ?? ""
-                
-                return CartItems(user: user, name: name, price: price)
+//                let data = QueryDocumentSnapshot.data()
+//
+//                let name = data["name"] as? String ?? ""
+//                let price = data["price"] as? String ?? ""
+//                let user = data["user"] as? String ?? ""
+//
+//                return CartItems(user: user, name: name, price: price)
             }
         }
     }
