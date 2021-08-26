@@ -19,7 +19,7 @@ struct E_commerce_nurseryApp: App {
     var body: some Scene {
         let viewModel = RegisterViewModel()
         WindowGroup {
-            welcomePage().environmentObject(viewModel)
+            ContentView().environmentObject(viewModel)
         }
     }
 }

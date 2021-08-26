@@ -3,4 +3,54 @@
    uuid = "9C4E774B-A34E-4F15-89BE-13AF1090210F"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "73DF1983-35FF-41FC-8E13-8D88E309EFE0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "E-commerce-nursery/View/Shopping/Cart/AddToCartView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "73DF1983-35FF-41FC-8E13-8D88E309EFE0 - 27f7618ae1142eb2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "E_commerce_nursery.AddToCartView.body.getter : some"
+                  moduleName = "E-commerce-nursery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruchir/Desktop/E-commerce-nursery/E-commerce-nursery/View/Shopping/Cart/AddToCartView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "231">
+               </Location>
+               <Location
+                  uuid = "73DF1983-35FF-41FC-8E13-8D88E309EFE0 - fecfc1b2cdd013c7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (E_commerce_nursery.CartItems) -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt; in E_commerce_nursery.AddToCartView.body.getter : some"
+                  moduleName = "E-commerce-nursery"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ruchir/Desktop/E-commerce-nursery/E-commerce-nursery/View/Shopping/Cart/AddToCartView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "327">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

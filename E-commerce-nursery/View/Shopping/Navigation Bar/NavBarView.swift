@@ -25,17 +25,28 @@ struct NavBarView: View {
                 .padding(.leading,20)
             Spacer()
             
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                ZStack {
+//            Button(action: {}, label: {
+//                ZStack {
+//                    Image(systemName: "cart")
+//                        .font(.title)
+//                        .foregroundColor(.black)
+//                    Circle()
+//                        .fill(Color.red)
+//                        .frame(width: 14, height: 14, alignment: .center)
+//                        .offset(x: 13, y: -10)
+//                }
+//            })
+            NavigationLink(
+                destination: AddToCartView(),
+                label: {
                     Image(systemName: "cart")
                         .font(.title)
                         .foregroundColor(.black)
-                    Circle()
-                        .fill(Color.red)
-                        .frame(width: 14, height: 14, alignment: .center)
-                        .offset(x: 13, y: -10)
-                }
-            })
+//                    Circle()
+//                        .fill(Color.red)
+//                        .frame(width: 14, height: 14, alignment: .center)
+//                        .offset(x: 13, y: -10)
+                })
         }
     }
 }
