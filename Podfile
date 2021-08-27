@@ -8,6 +8,7 @@ target 'E-commerce-nursery' do
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
   pod 'FirebaseFirestoreSwift', '> 7.0-beta'
+  pod 'Firebase/Storage'
   pod 'IQKeyboardManagerSwift'
 
 end
