@@ -24,15 +24,20 @@ struct TabBarView: View {
                     }, label: {
                         Spacer()
                         if(num == 2) {
-                            Image(systemName: tabBarImageItems[num])
-                                .font(.system(size: 44, weight: .bold))
-                                .foregroundColor(.red)
+                            NavigationLink(
+                                destination: /*@START_MENU_TOKEN@*/Text("Destination")/*@END_MENU_TOKEN@*/,
+                                label: {
+                                    Image(systemName: tabBarImageItems[num])
+                                        .font(.system(size: 44, weight: .bold))
+                                        .foregroundColor(.red)
+                                })
+                            
                             Spacer()
                         }
                         else {
                             NavigationLink(destination: ProductDetailView())  {
                                 Image(systemName: tabBarImageItems[num])
-                                    .font(.system(size: 24, weight: .bold))
+                                    .font(.system(size: 28, weight: .bold))
                                     .foregroundColor(selectedItem == num ? Color(.black) : .gray)
                             }
                             Spacer()

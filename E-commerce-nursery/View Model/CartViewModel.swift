@@ -10,18 +10,9 @@ import FirebaseFirestore
 import FirebaseFirestoreSwift
 
 class CartViewModel: ObservableObject {
-    @Published var products = [CartItems]()
+    @Published var cartProducts = [CartItems]()
     
     private var db = Firestore.firestore()
-    
-    func addData(product: CartItems) {
-        do {
-            let _ = try db.collection("products").addDocument(from: product)
-        }
-        catch {
-            print(error)
-        }
-    }
     
     func fetchData() {
         db.collection("products").addSnapshotListener { (querySnapshot, err) in
@@ -30,7 +21,7 @@ class CartViewModel: ObservableObject {
                 return
             }
             
-            self.products = documents.compactMap { (QueryDocumentSnapshot) -> CartItems? in
+            self.cartProducts = documents.compactMap { (QueryDocumentSnapshot) -> CartItems? in
                 return try? QueryDocumentSnapshot.data(as: CartItems.self)
                 
 //                let data = QueryDocumentSnapshot.data()

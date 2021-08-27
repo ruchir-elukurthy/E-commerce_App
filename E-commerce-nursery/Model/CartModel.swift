@@ -12,7 +12,7 @@ struct CartItems: Identifiable, Codable {
     @DocumentID var id: String? = UUID().uuidString
     var user: String
     var name: String
-    var price: String
+    var price: Float
     
     enum CodingKeys: String, CodingKey {
         case user

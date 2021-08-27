@@ -37,7 +37,7 @@ struct NavBarView: View {
 //                }
 //            })
             NavigationLink(
-                destination: AddToCartView(),
+                destination: CartView(),
                 label: {
                     Image(systemName: "cart")
                         .font(.title)

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AddToCartView: View {
+struct CartView: View {
    
    
 //    @Binding var items:[Product]
@@ -17,10 +17,10 @@ struct AddToCartView: View {
     @ObservedObject private var cartViewModel = CartViewModel()
     //@ObservedObject private var UserViewModel = RegisterViewModel()
     var body: some View {
-        List(cartViewModel.products) { product in
+        List(cartViewModel.cartProducts) { product in
             VStack {
                 Text(product.name)
-                Text(product.price)
+                Text(String(product.price))
                 Text(product.user)
             }
         }
@@ -151,9 +151,9 @@ struct AddToCartView: View {
     }
 }
 
-struct AddToCartView_Previews: PreviewProvider {
+struct CartView_Previews: PreviewProvider {
     
     static var previews: some View {
-        AddToCartView().previewLayout(.sizeThatFits)
+        CartView().previewLayout(.sizeThatFits)
     }
 }
