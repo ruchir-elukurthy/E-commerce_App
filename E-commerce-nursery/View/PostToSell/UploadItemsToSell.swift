@@ -22,6 +22,7 @@ struct UploadItemsToSell: View {
                     TextField("Quantity", value: $viewModel.product.quantity, formatter: NumberFormatter())
                     TextField("Enter product description", text: $viewModel.product.description)
                     TextField("Enter organization name", text: $viewModel.product.organization_name)
+                    UploadImageToSell(url: $viewModel.product.image_link)
                 }
             }
         }.navigationBarTitle("New").accentColor(.black)

@@ -10,7 +10,7 @@ import FirebaseFirestore
 import FirebaseFirestoreSwift
 
 class UploadNewProductViewModel: ObservableObject {
-    @Published var product: UploadProduct = UploadProduct(id: "", name: "", category: "", price: 0.0, quantity: 0, description: "", organization_name: "")
+    @Published var product: UploadProduct = UploadProduct(id: "", name: "", category: "", price: 0.0, quantity: 0, description: "", image_link: "", organization_name: "")
     
     private var db = Firestore.firestore()
     

@@ -11,25 +11,27 @@ import FirebaseStorage
 struct UploadImageToSell: View {
     
     @State var shown = false
+    @Binding var url: String
     
     var body: some View {
         Button(action: {
             self.shown.toggle()
         }) {
             Text("Upload Image")
+            Text(url)
         }.sheet(isPresented: $shown) {
-            imagePicker(shown: $shown)
+            imagePicker(shown: $shown, url: $url)
         }
     }
     
 }
 
-struct UploadImageToSell_Previews: PreviewProvider {
-    static var previews: some View {
-        UploadImageToSell()
-    }
-}
-
+//struct UploadImageToSell_Previews: PreviewProvider {
+//    static var previews: some View {
+//        UploadImageToSell(url: "")
+//    }
+//}
+//
 
 struct imagePicker: UIViewControllerRepresentable {
     func makeCoordinator() -> imagePicker.Coordinator {
@@ -38,6 +40,7 @@ struct imagePicker: UIViewControllerRepresentable {
     
     
     @Binding var shown: Bool
+    @Binding var url: String
     
     func makeUIViewController(context: UIViewControllerRepresentableContext<imagePicker>) -> imagePicker.UIViewControllerType {
         
@@ -54,7 +57,7 @@ struct imagePicker: UIViewControllerRepresentable {
         let randomID = UUID.init().uuidString
         @State var imageUploadSuccess = false
         var parent: imagePicker!
-        init(parent1:imagePicker) {
+        init(parent1: imagePicker) {
             parent = parent1
         }
         
@@ -65,6 +68,7 @@ struct imagePicker: UIViewControllerRepresentable {
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
             
             let image = info[.originalImage] as! UIImage
+            var urlString = ""
             
             let storage = Storage.storage()
             storage.reference().child("images/\(randomID).png").putData(image.jpegData(compressionQuality: 0.35)!, metadata: nil) { [self]
@@ -80,11 +84,13 @@ struct imagePicker: UIViewControllerRepresentable {
                             return
                         }
 
-                        let urlString = url.absoluteString
-                        print("Download URL: \(urlString)")
+                        parent.url = url.absoluteString
+                        print("Download URL: \(parent.url)")
                     })
                 }
                 parent.shown.toggle()
+                //parent.url = urlString
+                //print("Download URL: \(parent.url)")
             }
         }
     }

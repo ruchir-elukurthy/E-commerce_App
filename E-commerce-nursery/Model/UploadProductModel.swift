@@ -15,7 +15,7 @@ struct UploadProduct: Identifiable, Codable {
     var price: Float
     var quantity: Int
     var description: String
-    //var image_link: String
+    var image_link: String
     var organization_name: String
     
     enum CodingKeys: String, CodingKey {
@@ -24,6 +24,7 @@ struct UploadProduct: Identifiable, Codable {
         case price
         case quantity
         case description
+        case image_link
         case organization_name
     }
 }
