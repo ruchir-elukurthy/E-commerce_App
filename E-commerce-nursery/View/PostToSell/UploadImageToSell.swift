@@ -8,7 +8,7 @@
 import SwiftUI
 import FirebaseStorage
 
-struct FormSellingInput: View {
+struct UploadImageToSell: View {
     
     @State var shown = false
     
@@ -18,15 +18,15 @@ struct FormSellingInput: View {
         }) {
             Text("Upload Image")
         }.sheet(isPresented: $shown) {
-        imagePicker(shown: $shown)
+            imagePicker(shown: $shown)
         }
     }
     
 }
 
-struct FormSellingInput_Previews: PreviewProvider {
+struct UploadImageToSell_Previews: PreviewProvider {
     static var previews: some View {
-        FormSellingInput()
+        UploadImageToSell()
     }
 }
 
@@ -52,6 +52,7 @@ struct imagePicker: UIViewControllerRepresentable {
     
     class Coordinator: NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
         let randomID = UUID.init().uuidString
+        @State var imageUploadSuccess = false
         var parent: imagePicker!
         init(parent1:imagePicker) {
             parent = parent1
@@ -73,7 +74,7 @@ struct imagePicker: UIViewControllerRepresentable {
                     print(err?.localizedDescription)
                 }
                 else {
-                    print("successfull")
+                    imageUploadSuccess = true
                     storage.reference().child("images/\(randomID).png").downloadURL(completion: {url, error in
                         guard let url = url, error == nil else {
                             return
@@ -81,7 +82,6 @@ struct imagePicker: UIViewControllerRepresentable {
 
                         let urlString = url.absoluteString
                         print("Download URL: \(urlString)")
-                        //UserDefaults.standard.set
                     })
                 }
                 parent.shown.toggle()

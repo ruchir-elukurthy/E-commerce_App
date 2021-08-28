@@ -25,7 +25,7 @@ struct TabBarView: View {
                         Spacer()
                         if(num == 2) {
                             NavigationLink(
-                                destination: FormSellingInput(),
+                                destination: UploadItemsToSell(),
                                 label: {
                                     Image(systemName: tabBarImageItems[num])
                                         .font(.system(size: 44, weight: .bold))
