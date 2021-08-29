@@ -24,31 +24,33 @@ struct ProductLoadView: View {
     @ObservedObject var loadViewModel = FetchProductsViewModel()
     
     var body: some View {
+        
         LazyVGrid(columns: Array(repeating: GridItem(.flexible(),spacing: 10), count: 2), content: {
                 ForEach(loadViewModel.products) {products in
-                    VStack {
-                        ZStack {
-                            Image(systemName: "person.fill")
-                                .data(url: URL(string: products.image_link)!)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 150, height: 100, alignment: .center)
-                                .padding(10)
+                    NavigationLink(destination: ProductInformationView(product: products)) {
+                        VStack {
+                            ZStack {
+                                Image(systemName: "person.fill")
+                                    .data(url: URL(string: products.image_link)!)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 150, height: 100, alignment: .center)
+                                    .padding(10)
+                            }
+                            Text(products.name)
+                                .font(.title3)
+                                .fontWeight(.bold)
+                            Text(String(products.price))
+                                .fontWeight(.semibold)
+                                .foregroundColor(.gray)
+                            
                         }
-                        Text(products.name)
-                            .font(.title3)
-                            .fontWeight(.bold)
-                        Text(String(products.price))
-                            .fontWeight(.semibold)
-                            .foregroundColor(.gray)
-                        
                     }
                 }
 
-        }).onAppear {
+            }).onAppear {
             self.loadViewModel.fetchData()
         }
-
     }
 }
 

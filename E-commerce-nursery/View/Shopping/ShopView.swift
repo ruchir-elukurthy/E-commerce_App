@@ -35,7 +35,7 @@ struct ShopView: View {
                             .padding(.trailing, 230)
                     }
                     
-                        ProductLoadView()
+                    ProductLoadView()
                 }
             }
             Spacer()

@@ -1,13 +1,16 @@
 //
-//  UserProfileView.swift
+//  ProductInfomrationView.swift
 //  E-commerce-nursery
 //
-//  Created by Ruchir on 8/19/21.
+//  Created by Ruchir on 8/29/21.
 //
 
 import SwiftUI
 
-struct ProductDetailView: View {
+struct ProductInformationView: View {
+    
+    var product: UploadProduct
+    
     var body: some View {
         VStack {
             ScrollView(.vertical, showsIndicators: false) {
@@ -21,18 +24,16 @@ struct ProductDetailView: View {
                     
                 }
                 VStack {
-                    Text("Plants")
-                        .padding(.trailing,100)
-                    Text("Snake Plant")
+                    Text(product.name)
                         .font(.title)
                         .fontWeight(.bold)
-                }.padding(.trailing,200)
+                }.padding(.trailing)
                 
-                ProductImageView()
-                RatingView()
-                    .padding(.trailing,250)
+                ProductImageView(imageURL: product.image_link, price: product.price)
+                ProductQuantityView(quantity: product.quantity)
+                    .padding(.trailing,200)
                     .padding(.bottom,10)
-                ProductDescriptionView()
+                ProductDescriptionView(description: product.description)
                     .padding(.leading,10)
                     .padding(.trailing,10)
             }
@@ -44,8 +45,9 @@ struct ProductDetailView: View {
     }
 }
 
-struct ProductDetailView_Previews: PreviewProvider {
+struct ProductInformationView_Previews: PreviewProvider {
+    
     static var previews: some View {
-        ProductDetailView().previewLayout(.sizeThatFits)
+        ProductInformationView(product: UploadProduct(id: "", name: "Snake Plant", category: "Plant", price: 0.0, quantity: 0, description: "hello", image_link: "https://firebasestorage.googleapis.com/v0/b/ecommercenursery.appspot.com/o/images%2F52DF2D6A-8505-43D2-9B6C-36A8CDEB4B8B.png?alt=media&token=69c9c305-b049-4f6d-8c96-f8db820d5ca4", organization_name: ""))
     }
 }
