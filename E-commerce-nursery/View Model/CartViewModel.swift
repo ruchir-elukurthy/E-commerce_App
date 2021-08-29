@@ -24,13 +24,6 @@ class CartViewModel: ObservableObject {
             self.cartProducts = documents.compactMap { (QueryDocumentSnapshot) -> CartItems? in
                 return try? QueryDocumentSnapshot.data(as: CartItems.self)
                 
-//                let data = QueryDocumentSnapshot.data()
-//
-//                let name = data["name"] as? String ?? ""
-//                let price = data["price"] as? String ?? ""
-//                let user = data["user"] as? String ?? ""
-//
-//                return CartItems(user: user, name: name, price: price)
             }
         }
     }

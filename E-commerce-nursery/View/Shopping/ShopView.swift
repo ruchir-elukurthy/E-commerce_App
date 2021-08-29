@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ShopView: View {
     
+    @ObservedObject var loadViewModel = FetchProductsViewModel()
+    
     var body: some View {
         VStack() {
             ScrollView(.vertical, showsIndicators: false) {
@@ -32,11 +34,8 @@ struct ShopView: View {
                             .fontWeight(.bold)
                             .padding(.trailing, 230)
                     }
-                    LazyVGrid(columns: Array(repeating: GridItem(.flexible(),spacing: 10), count: 2), content: {
-                            ForEach(0..<5) {num in 
-                                ProductItemView(index: num)
-                            }
-                    })
+                    
+                        ProductLoadView()
                 }
             }
             Spacer()

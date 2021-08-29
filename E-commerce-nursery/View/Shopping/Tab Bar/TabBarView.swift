@@ -35,7 +35,7 @@ struct TabBarView: View {
                             Spacer()
                         }
                         else {
-                            NavigationLink(destination: ProductDetailView())  {
+                            NavigationLink(destination: ProductLoadView())  {
                                 Image(systemName: tabBarImageItems[num])
                                     .font(.system(size: 28, weight: .bold))
                                     .foregroundColor(selectedItem == num ? Color(.black) : .gray)

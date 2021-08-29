@@ -120,15 +120,15 @@ struct CartView: View {
 //                Text("Checkout")
 //            })
 //                       //if self.items.count == 0 {
-////                           HStack(alignment: .center, spacing: 12) {
-////                               Text("Cart Empty")
-////                               Image(systemName: "xmark")
-////                          // }
-////                           .frame(width: geometry.size.width - 40, height: 60, alignment: .center)
-////                           .foregroundColor(Color.white)
-////                           .font(Font.system(size: 17, weight: .semibold, design: .rounded))
-////                           .background(Color.gray)
-////                           .cornerRadius(10)
+//                           HStack(alignment: .center, spacing: 12) {
+//                               Text("Cart Empty")
+//                               Image(systemName: "xmark")
+//                          // }
+//                           .frame(width: geometry.size.width - 40, height: 60, alignment: .center)
+//                           .foregroundColor(Color.white)
+//                           .font(Font.system(size: 17, weight: .semibold, design: .rounded))
+//                           .background(Color.gray)
+//                           .cornerRadius(10)
 //                       //} else {
 //                           HStack(alignment: .center, spacing: 12) {
 //                               Text("Confirm Transaction")

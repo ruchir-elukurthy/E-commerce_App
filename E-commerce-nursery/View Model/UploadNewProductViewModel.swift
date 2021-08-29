@@ -26,4 +26,5 @@ class UploadNewProductViewModel: ObservableObject {
     func save() {
         addProduct(product: product)
     }
+    
 }

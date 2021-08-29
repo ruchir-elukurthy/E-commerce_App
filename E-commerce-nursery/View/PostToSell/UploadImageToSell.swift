@@ -26,12 +26,12 @@ struct UploadImageToSell: View {
     
 }
 
-//struct UploadImageToSell_Previews: PreviewProvider {
-//    static var previews: some View {
-//        UploadImageToSell(url: "")
-//    }
-//}
-//
+struct UploadImageToSell_Previews: PreviewProvider {
+    static var previews: some View {
+        UploadImageToSell(url: Binding<String>.constant(""))
+    }
+}
+
 
 struct imagePicker: UIViewControllerRepresentable {
     func makeCoordinator() -> imagePicker.Coordinator {
