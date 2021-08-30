@@ -37,7 +37,7 @@ struct ProductInformationView: View {
                     .padding(.leading,10)
                     .padding(.trailing,10)
             }
-            CartAdditionButton()
+            CartAdditionButton(product: product)
                 .padding(.bottom,18)
         }
         .background(Color.gray.opacity(0.1))

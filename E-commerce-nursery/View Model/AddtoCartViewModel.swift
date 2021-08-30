@@ -11,7 +11,7 @@ import FirebaseFirestoreSwift
 
 class AddtoCartViewModel: ObservableObject {
     
-    @Published var Cartproduct: CartItems = CartItems(user: "", name: "", price: 0)
+    @Published var Cartproduct: CartItems = CartItems(id: "", user: "", name: "", category: "", price: 0.0, quantity: 0, description: "", image_link: "", organization_name: "")
     
     var db = Firestore.firestore()
     
@@ -22,5 +22,9 @@ class AddtoCartViewModel: ObservableObject {
         catch {
             print(error)
         }
+    }
+    
+    func save() {
+        addData(product: Cartproduct)
     }
 }

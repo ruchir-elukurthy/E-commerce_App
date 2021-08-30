@@ -27,17 +27,5 @@ class FetchProductsViewModel: ObservableObject {
             }
         }
     }
-    
-    func getNumberOfCollection() -> Int {
-        var numberOfElements = -1
-        db.collection("uploads").getDocuments { (snapshot, error) in
-            guard let snapshot = snapshot, error == nil else {
-             //handle error
-             return
-            }
-            numberOfElements = snapshot.documents.count
-        }
-        return numberOfElements
-    }
 }
 

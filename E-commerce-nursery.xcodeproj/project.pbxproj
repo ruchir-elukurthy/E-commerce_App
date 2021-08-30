@@ -267,10 +267,10 @@
 			isa = PBXGroup;
 			children = (
 				BA921E5F26CF179F00244F0B /* SellingProductModel.swift */,
-				BA7E02FE26D7188800223B51 /* CartModel.swift */,
-				BA7AD28426D9CE85004DC366 /* UploadProductModel.swift */,
 				BA658DCF26DC386500E79F88 /* PlantModel.swift */,
 				BA658DD126DC388200E79F88 /* CategoryModel.swift */,
+				BA7AD28426D9CE85004DC366 /* UploadProductModel.swift */,
+				BA7E02FE26D7188800223B51 /* CartModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -298,8 +298,8 @@
 				BA78352A26DAED8D00F74A4F /* ProductLoadView.swift */,
 				BA98B14726D04B1A00225891 /* ProductImageView.swift */,
 				BA98B14D26D06EC700225891 /* ProductDescriptionView.swift */,
-				BA98B14F26D072E800225891 /* CartAdditionButton.swift */,
 				BA658DC826DC338000E79F88 /* ProductQuantityView.swift */,
+				BA98B14F26D072E800225891 /* CartAdditionButton.swift */,
 			);
 			path = Products;
 			sourceTree = "<group>";

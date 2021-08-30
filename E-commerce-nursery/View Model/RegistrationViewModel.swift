@@ -46,4 +46,5 @@ class RegisterViewModel: ObservableObject {
         
         self.signedIn = false
     }
+
 }

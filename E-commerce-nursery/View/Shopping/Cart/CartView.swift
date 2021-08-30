@@ -8,14 +8,12 @@
 import SwiftUI
 
 struct CartView: View {
-   
-   
 //    @Binding var items:[Product]
 //
     @State private var isEditing:Bool = false
     
     @ObservedObject private var cartViewModel = CartViewModel()
-    //@ObservedObject private var UserViewModel = RegisterViewModel()
+    
     var body: some View {
         List(cartViewModel.cartProducts) { product in
             VStack {
@@ -27,6 +25,16 @@ struct CartView: View {
         .onAppear() {
             self.cartViewModel.fetchData()
         }
+    }
+}
+
+struct CartView_Previews: PreviewProvider {
+    
+    static var previews: some View {
+        CartView().previewLayout(.sizeThatFits)
+    }
+}
+
 //        VStack {
 //        VStack(alignment: .center, spacing: 0) {
 //            ZStack {
@@ -148,12 +156,3 @@ struct CartView: View {
 //               .padding(.bottom, 100) // Add Space at bottom of Scroll View
 //           }
     
-    }
-}
-
-struct CartView_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        CartView().previewLayout(.sizeThatFits)
-    }
-}
