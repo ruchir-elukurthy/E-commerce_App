@@ -8,6 +8,7 @@
 import SwiftUI
 import Firebase
 import IQKeyboardManagerSwift
+import LTMorphingLabel
 
 
 @main
@@ -15,6 +16,7 @@ struct E_commerce_nurseryApp: App {
     init() {
         FirebaseApp.configure()
         IQKeyboardManager.shared.enable = true
+        LTMorphingLabel.
     }
     var body: some Scene {
         let viewModel = RegisterViewModel()

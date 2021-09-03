@@ -10,5 +10,6 @@ target 'E-commerce-nursery' do
   pod 'FirebaseFirestoreSwift', '> 7.0-beta'
   pod 'Firebase/Storage'
   pod 'IQKeyboardManagerSwift'
+  pod 'LTMorphingLabel'
 
 end

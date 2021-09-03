@@ -335,6 +335,7 @@ PODS:
   - GTMSessionFetcher/Core (1.5.0)
   - IQKeyboardManagerSwift (6.5.6)
   - leveldb-library (1.22.1)
+  - LTMorphingLabel (0.9.3)
   - nanopb (2.30907.0):
     - nanopb/decode (= 2.30907.0)
     - nanopb/encode (= 2.30907.0)
@@ -349,6 +350,7 @@ DEPENDENCIES:
   - Firebase/Storage
   - FirebaseFirestoreSwift (> 7.0-beta)
   - IQKeyboardManagerSwift
+  - LTMorphingLabel
 
 SPEC REPOS:
   trunk:
@@ -371,6 +373,7 @@ SPEC REPOS:
     - GTMSessionFetcher
     - IQKeyboardManagerSwift
     - leveldb-library
+    - LTMorphingLabel
     - nanopb
     - PromisesObjC
 
@@ -394,9 +397,10 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
+  LTMorphingLabel: f2b256e4fe665aac27f0d0e8ccdcd79590f0cd70
   nanopb: 59221d7f958fb711001e6a449489542d92ae113e
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
 
-PODFILE CHECKSUM: 5a0749cb774c04200d1715b4deb2a2d1e0339be0
+PODFILE CHECKSUM: d761bb39fbafc236fbee9c63b415de397a845d13
 
 COCOAPODS: 1.10.1
