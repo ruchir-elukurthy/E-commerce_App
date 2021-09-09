@@ -8,18 +8,29 @@
 import SwiftUI
 
 struct CartView: View {
-//    @Binding var items:[Product]
-//
+
     @State private var isEditing:Bool = false
     
     @ObservedObject private var cartViewModel = CartViewModel()
     
     var body: some View {
         List(cartViewModel.cartProducts) { product in
-            VStack {
-                Text(product.name)
-                Text(String(product.price))
-                Text(product.user)
+            HStack {
+                Image(systemName: "person.fill")
+                    .data(url: URL(string: product.image_link)!)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 150, height: 100, alignment: .center)
+                    .cornerRadius(15)
+                    .padding(5)
+                VStack {
+                    Text(product.name)
+                        .padding(.bottom,10)
+                    Text("$"+String(product.price))
+                        .bold()
+                }
+                .padding(.trailing,40)
+                .padding(.bottom,10)
             }
         }
         .onAppear() {
