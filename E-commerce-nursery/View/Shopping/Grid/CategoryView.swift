@@ -24,7 +24,7 @@ struct CategoryView: View {
             .padding()
             .background(Color.white.cornerRadius(12))
             .background(RoundedRectangle(cornerRadius: 12)
-                            .stroke(Color.gray,lineWidth: 1))
+            .stroke(Color.gray,lineWidth: 1))
         })
     }
 }

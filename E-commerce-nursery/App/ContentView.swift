@@ -16,11 +16,6 @@ struct ContentView: View {
             VStack {
                 if viewModel.isSignedIn {
                     ShopView()
-                    Button(action: {
-                        viewModel.signOut()
-                    }, label: {
-                        Text("Sign Out")
-                    })
                 }
                 else {
                     LoginView()

@@ -10,22 +10,33 @@ import LTMorphingLabel
 
 struct NavBarView: View {
     
+    @EnvironmentObject var viewModel : RegisterViewModel
+    
     var body: some View {
         HStack {
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                Image(systemName: "magnifyingglass")
-                    .frame(width: 40, height: 35, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    .accentColor(.black)
-                    
-            }).padding(.trailing, 30)
+            NavigationLink(
+                destination: CartView(),
+                label: {
+                    Image(systemName: "cart")
+                        .font(.title)
+                        .foregroundColor(.black)
+                        .padding(.trailing, 60)
+            })
+            
             Text("PlantHouse")
                 .font(.title2)
                 .fontWeight(.bold)
-                .padding(.leading, 30)
+                .padding(.trailing, 20)
                 .foregroundColor(Color(red: 10 / 255, green: 132 / 255, blue: 10 / 255))
-                .padding(.leading,20)
-            Spacer()
             
+            Button(action: {
+                viewModel.signOut()
+            }, label: {
+                Text("Sign Out")
+                    .frame(width: 80, height: 35, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .accentColor(.blue)
+                    
+            }).padding(.trailing, 1)
 //            Button(action: {}, label: {
 //                ZStack {
 //                    Image(systemName: "cart")
@@ -37,17 +48,6 @@ struct NavBarView: View {
 //                        .offset(x: 13, y: -10)
 //                }
 //            })
-            NavigationLink(
-                destination: CartView(),
-                label: {
-                    Image(systemName: "cart")
-                        .font(.title)
-                        .foregroundColor(.black)
-//                    Circle()
-//                        .fill(Color.red)
-//                        .frame(width: 14, height: 14, alignment: .center)
-//                        .offset(x: 13, y: -10)
-                })
         }
     }
 }
