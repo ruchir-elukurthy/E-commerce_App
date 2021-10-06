@@ -10,6 +10,7 @@ import SwiftUI
 struct ShopView: View {
     
     @ObservedObject var loadViewModel = FetchProductsViewModel()
+    @ObservedObject var searchViewModel = SearchViewModel()
     
     var body: some View {
         VStack() {
@@ -22,6 +23,8 @@ struct ShopView: View {
                         .background(Color.white)
                         .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 5)
                     Spacer(minLength: 30)
+                    SearchBarView(resultant_search_data: self.$searchViewModel.searchInfo)
+                        .padding(.bottom)
                     TabImageView()
                         .frame(width: 350, height: 230)
                         .cornerRadius(12.0)

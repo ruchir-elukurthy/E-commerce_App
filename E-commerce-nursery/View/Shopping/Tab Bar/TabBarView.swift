@@ -10,7 +10,7 @@ import SwiftUI
 struct TabBarView: View {
     @State var selectedItem = 0
     
-    let tabBarImageItems = ["house", "magnifyingglass.circle", "plus.app.fill", "person", "gear"]
+    let tabBarImageItems = ["house", "plus.app.fill", "magnifyingglass.circle"]
     
     var body: some View {
         
@@ -18,12 +18,12 @@ struct TabBarView: View {
             Spacer()
 
             HStack {
-                ForEach(0..<5) { num in
+                ForEach(0..<3) { num in
                     Button(action: {
                         selectedItem = num
                     }, label: {
                         Spacer()
-                        if(num == 2) {
+                        if(num == 1) {
                             NavigationLink(
                                 destination: UploadItemsToSell(),
                                 label: {
