@@ -262,8 +262,8 @@
 			isa = PBXGroup;
 			children = (
 				BA670B5D26BF82030043E2A2 /* ShopView.swift */,
-				BACE6F54270D0B8E009787AD /* Search Bar */,
 				BA868D1926CE0AD1001D4979 /* Navigation Bar */,
+				BACE6F54270D0B8E009787AD /* Search Bar */,
 				BA868D1A26CE0AE0001D4979 /* Tab View */,
 				BA868D1826CE0A15001D4979 /* Grid */,
 				BA921E5A26CEFC1A00244F0B /* Tab Bar */,
