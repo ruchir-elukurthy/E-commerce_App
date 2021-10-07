@@ -37,7 +37,6 @@ struct LoginView: View {
         .autocapitalization(.none)
         .disableAutocorrection(true)
 
-        
         SecureField("Password", text: $password)
                 .padding()
                 .background(Color(UIColor.lightGray))
@@ -59,6 +58,12 @@ struct LoginView: View {
                 .background(Color.green)
                 .cornerRadius(15.0)
         })
+        
+        Spacer(minLength: 20)
+        
+        Text("New User? Click on Register")
+            .bold()
+            .foregroundColor(.red)
         NavigationLink("Register",destination: RegisterView())
             .font(.headline)
             .foregroundColor(.white)

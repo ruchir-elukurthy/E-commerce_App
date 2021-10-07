@@ -13,37 +13,40 @@ struct TabBarView: View {
     let tabBarImageItems = ["house", "plus.app.fill", "magnifyingglass.circle"]
     
     var body: some View {
-        
         VStack {
             Spacer()
 
             HStack {
-                ForEach(0..<3) { num in
-                    Button(action: {
-                        selectedItem = num
-                    }, label: {
-                        Spacer()
-                        if(num == 1) {
-                            NavigationLink(
-                                destination: UploadItemsToSell(),
-                                label: {
-                                    Image(systemName: tabBarImageItems[num])
-                                        .font(.system(size: 44, weight: .bold))
-                                        .foregroundColor(.red)
-                                })
-                            
-                            Spacer()
-                        }
-                        else {
-                            NavigationLink(destination: ProductLoadView())  {
-                                Image(systemName: tabBarImageItems[num])
-                                    .font(.system(size: 28, weight: .bold))
-                                    .foregroundColor(selectedItem == num ? Color(.black) : .gray)
-                            }
-                            Spacer()
-                        }
+                Spacer()
+                
+                NavigationLink (
+                    destination: ShopView(),
+                    label : {
+                        Image(systemName: tabBarImageItems[0])
+                            .font(.system(size: 28, weight: .bold))
+                            .foregroundColor(selectedItem == 0 ? Color(.black) : .gray)
+                })
+                
+                Spacer()
+                
+                NavigationLink(
+                    destination: UploadItemsToSell(),
+                    label: {
+                        Image(systemName: tabBarImageItems[1])
+                            .font(.system(size: 44, weight: .bold))
+                            .foregroundColor(.red)
                     })
-                }
+                
+                Spacer()
+                
+                NavigationLink (
+                    destination: NutritionInformationSearchView(),
+                    label : {
+                        Image(systemName: tabBarImageItems[2])
+                            .font(.system(size: 28, weight: .bold))
+                            .foregroundColor(selectedItem == 2 ? Color(.black) : .gray)
+                })
+                Spacer()
             }
         }
         .frame(

@@ -68,7 +68,6 @@ struct imagePicker: UIViewControllerRepresentable {
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
             
             let image = info[.originalImage] as! UIImage
-            var urlString = ""
             
             let storage = Storage.storage()
             storage.reference().child("images/\(randomID).png").putData(image.jpegData(compressionQuality: 0.35)!, metadata: nil) { [self]
@@ -89,8 +88,6 @@ struct imagePicker: UIViewControllerRepresentable {
                     })
                 }
                 parent.shown.toggle()
-                //parent.url = urlString
-                //print("Download URL: \(parent.url)")
             }
         }
     }

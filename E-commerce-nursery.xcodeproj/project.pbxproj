@@ -21,6 +21,7 @@
 		BA6BBAD326D379DF00FE5904 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6BBAD226D379DF00FE5904 /* CartView.swift */; };
 		BA78352B26DAED8D00F74A4F /* ProductLoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78352A26DAED8D00F74A4F /* ProductLoadView.swift */; };
 		BA78352D26DAF3D200F74A4F /* FetchProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA78352C26DAF3D200F74A4F /* FetchProductsViewModel.swift */; };
+		BA7A13A6270FA628009CF476 /* NutritionInformationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7A13A5270FA628009CF476 /* NutritionInformationSearchView.swift */; };
 		BA7AD28126D9CBB2004DC366 /* UploadItemsToSell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7AD28026D9CBB2004DC366 /* UploadItemsToSell.swift */; };
 		BA7AD28326D9CD15004DC366 /* UploadNewProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7AD28226D9CD15004DC366 /* UploadNewProductViewModel.swift */; };
 		BA7AD28526D9CE85004DC366 /* UploadProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7AD28426D9CE85004DC366 /* UploadProductModel.swift */; };
@@ -69,6 +70,7 @@
 		BA6BBAD226D379DF00FE5904 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		BA78352A26DAED8D00F74A4F /* ProductLoadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductLoadView.swift; sourceTree = "<group>"; };
 		BA78352C26DAF3D200F74A4F /* FetchProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchProductsViewModel.swift; sourceTree = "<group>"; };
+		BA7A13A5270FA628009CF476 /* NutritionInformationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionInformationSearchView.swift; sourceTree = "<group>"; };
 		BA7AD28026D9CBB2004DC366 /* UploadItemsToSell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadItemsToSell.swift; sourceTree = "<group>"; };
 		BA7AD28226D9CD15004DC366 /* UploadNewProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadNewProductViewModel.swift; sourceTree = "<group>"; };
 		BA7AD28426D9CE85004DC366 /* UploadProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadProductModel.swift; sourceTree = "<group>"; };
@@ -161,6 +163,14 @@
 				BA96E8B7270F9003003C06C1 /* BuyButtonView.swift */,
 			);
 			path = Cart;
+			sourceTree = "<group>";
+		};
+		BA7A13A4270FA5E4009CF476 /* Nutrition Search */ = {
+			isa = PBXGroup;
+			children = (
+				BA7A13A5270FA628009CF476 /* NutritionInformationSearchView.swift */,
+			);
+			path = "Nutrition Search";
 			sourceTree = "<group>";
 		};
 		BA82DAF026BE230F00C4049E = {
@@ -301,6 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				BA921E5826CEE56F00244F0B /* TabBarView.swift */,
+				BA7A13A4270FA5E4009CF476 /* Nutrition Search */,
 			);
 			path = "Tab Bar";
 			sourceTree = "<group>";
@@ -479,6 +490,7 @@
 				BA868D1526CDFDF0001D4979 /* GridView.swift in Sources */,
 				BA7E02FD26D7131100223B51 /* CartViewModel.swift in Sources */,
 				BA82DB1326BE641600C4049E /* LoginView.swift in Sources */,
+				BA7A13A6270FA628009CF476 /* NutritionInformationSearchView.swift in Sources */,
 				BA7AD28526D9CE85004DC366 /* UploadProductModel.swift in Sources */,
 				BA921E6026CF179F00244F0B /* SellingProductModel.swift in Sources */,
 				BA78352D26DAF3D200F74A4F /* FetchProductsViewModel.swift in Sources */,
