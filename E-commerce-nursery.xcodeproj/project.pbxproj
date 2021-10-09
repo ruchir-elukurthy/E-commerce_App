@@ -630,6 +630,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"E-commerce-nursery/Preview Content\"";
+				DEVELOPMENT_TEAM = WBUSN7K26D;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "E-commerce-nursery/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -640,7 +641,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ruchirelukurthy.E-commerce-nursery";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -652,6 +653,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"E-commerce-nursery/Preview Content\"";
+				DEVELOPMENT_TEAM = WBUSN7K26D;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "E-commerce-nursery/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -662,7 +664,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ruchirelukurthy.E-commerce-nursery";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
