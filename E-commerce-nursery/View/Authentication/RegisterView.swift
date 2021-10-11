@@ -16,9 +16,9 @@ struct RegisterView: View {
     
     var body: some View {
         VStack {
-            Text("Welcome!")
-               .font(.largeTitle)
-               .fontWeight(.semibold)
+//            Text("Welcome!")
+//               .font(.largeTitle)
+//               .fontWeight(.semibold)
             Image("registerScreen")
                 .resizable()
                 .aspectRatio(contentMode: .fill)

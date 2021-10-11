@@ -38,7 +38,7 @@ struct CartView: View {
                         }
                     }
                 }
-            }.navigationBarTitle(Text("Your Cart"))
+            }.navigationBarTitle(Text("Your Summer Garden"))
             BuyButtonView()
         }
         .onAppear() {

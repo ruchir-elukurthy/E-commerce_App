@@ -17,24 +17,24 @@ struct CartAdditionButton: View {
     var body: some View {
         VStack {
             HStack {
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Image(systemName: "minus.circle")
-                        .resizable()
-                        .frame(width: 40, height: 40, alignment: .center)
-                        .accentColor(.black)
-                })
-                
-                Text("0")
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .frame(width: 40, height: 40, alignment: .center)
-                
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Image(systemName: "plus.circle")
-                        .resizable()
-                        .frame(width: 40, height: 40, alignment: .center)
-                        .accentColor(.black)
-                })
+//                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+//                    Image(systemName: "minus.circle")
+//                        .resizable()
+//                        .frame(width: 40, height: 40, alignment: .center)
+//                        .accentColor(.black)
+//                })
+//
+//                Text("0")
+//                    .font(.title)
+//                    .fontWeight(.bold)
+//                    .frame(width: 40, height: 40, alignment: .center)
+//
+//                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+//                    Image(systemName: "plus.circle")
+//                        .resizable()
+//                        .frame(width: 40, height: 40, alignment: .center)
+//                        .accentColor(.black)
+//                })
             }.padding(.trailing,170)
             
             Button(action: {

@@ -13,7 +13,7 @@ struct ProductDescriptionView: View {
     
     var body: some View {
         Text(description)
-            .opacity(0.7)
+            .opacity(0.9)
             .font(.system(.body, design: .rounded))
             .fixedSize(horizontal: false, vertical: true)
     }

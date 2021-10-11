@@ -39,47 +39,47 @@ struct SearchDetailView: View {
                 ProductDescriptionView(description: data.description)
                     .padding(.leading,10)
                     .padding(.trailing,10)
-                HStack {
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                        Image(systemName: "minus.circle")
-                            .resizable()
-                            .frame(width: 40, height: 40, alignment: .center)
-                            .accentColor(.black)
-                    })
-                    
-                    Text("0")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .frame(width: 40, height: 40, alignment: .center)
-                    
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                        Image(systemName: "plus.circle")
-                            .resizable()
-                            .frame(width: 40, height: 40, alignment: .center)
-                            .accentColor(.black)
-                    })
-                }.padding(.trailing,170)
-                
-                Button(action: {
-                    viewModel.Cartproduct.user = email_id
-                    viewModel.Cartproduct.category = data.category
-                    viewModel.Cartproduct.description = data.description
-                    viewModel.Cartproduct.image_link = data.image_link
-                    viewModel.Cartproduct.name = data.name
-                    viewModel.Cartproduct.organization_name = data.organization_name
-                    viewModel.Cartproduct.quantity = data.quantity
-                    viewModel.Cartproduct.price = data.price
-                    SaveAndDismiss()
-                }, label: {
-                    Text("ADD TO CART")
-                        .font(.headline)
-                        .foregroundColor(.white)
-                        .padding()
-                        .padding(.bottom, 10)
-                        .frame(width: 340, height: 60)
-                        .background(Color.red.opacity(0.85))
-                        .cornerRadius(35.0)
-                })
+//                HStack {
+//                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+//                        Image(systemName: "minus.circle")
+//                            .resizable()
+//                            .frame(width: 40, height: 40, alignment: .center)
+//                            .accentColor(.black)
+//                    })
+//                    
+//                    Text("0")
+//                        .font(.title)
+//                        .fontWeight(.bold)
+//                        .frame(width: 40, height: 40, alignment: .center)
+//                    
+//                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+//                        Image(systemName: "plus.circle")
+//                            .resizable()
+//                            .frame(width: 40, height: 40, alignment: .center)
+//                            .accentColor(.black)
+//                    })
+//                }.padding(.trailing,170)
+//                
+//                Button(action: {
+//                    viewModel.Cartproduct.user = email_id
+//                    viewModel.Cartproduct.category = data.category
+//                    viewModel.Cartproduct.description = data.description
+//                    viewModel.Cartproduct.image_link = data.image_link
+//                    viewModel.Cartproduct.name = data.name
+//                    viewModel.Cartproduct.organization_name = data.organization_name
+//                    viewModel.Cartproduct.quantity = data.quantity
+//                    viewModel.Cartproduct.price = data.price
+//                    SaveAndDismiss()
+//                }, label: {
+//                    Text("ADD TO CART")
+//                        .font(.headline)
+//                        .foregroundColor(.white)
+//                        .padding()
+//                        .padding(.bottom, 10)
+//                        .frame(width: 340, height: 60)
+//                        .background(Color.red.opacity(0.85))
+//                        .cornerRadius(35.0)
+//                })
             }
             .background(Color.gray.opacity(0.1))
             .ignoresSafeArea(.all)
