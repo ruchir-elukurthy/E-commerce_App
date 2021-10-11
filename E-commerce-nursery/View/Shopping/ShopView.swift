@@ -32,7 +32,7 @@ struct ShopView: View {
                     GridView()
                         .padding(.bottom)
                     HStack {
-                        Text("Buy now")
+                        Text("Listing")
                             .font(.title)
                             .fontWeight(.bold)
                             .padding(.trailing, 230)

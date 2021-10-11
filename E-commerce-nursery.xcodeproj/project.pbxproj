@@ -319,8 +319,8 @@
 		BA921E6326CF7F9C00244F0B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BA78352A26DAED8D00F74A4F /* ProductLoadView.swift */,
 				BA658DC626DC11A200E79F88 /* ProductInformationView.swift */,
+				BA78352A26DAED8D00F74A4F /* ProductLoadView.swift */,
 				BA98B14726D04B1A00225891 /* ProductImageView.swift */,
 				BA98B14D26D06EC700225891 /* ProductDescriptionView.swift */,
 				BA658DC826DC338000E79F88 /* ProductQuantityView.swift */,
@@ -629,6 +629,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"E-commerce-nursery/Preview Content\"";
 				DEVELOPMENT_TEAM = WBUSN7K26D;
 				ENABLE_PREVIEWS = YES;
@@ -652,6 +653,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"E-commerce-nursery/Preview Content\"";
 				DEVELOPMENT_TEAM = WBUSN7K26D;
 				ENABLE_PREVIEWS = YES;

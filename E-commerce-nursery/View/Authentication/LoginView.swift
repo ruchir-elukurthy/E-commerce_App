@@ -19,10 +19,11 @@ struct LoginView: View {
     var body: some View {
         
     VStack {
-        Text("Welcome!")
-           .font(.largeTitle)
-           .fontWeight(.semibold)
+//        Text("Welcome!")
+//           .font(.largeTitle)
+//           .fontWeight(.semibold)
         
+        Spacer(minLength: 50)
         Image("registerScreen")
             .resizable()
             .aspectRatio(contentMode: .fill)

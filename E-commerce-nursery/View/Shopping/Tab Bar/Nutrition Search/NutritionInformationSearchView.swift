@@ -9,8 +9,9 @@ import SwiftUI
 
 struct NutritionInformationSearchView: View {
     var body: some View {
-        Text("Available in the next release")
-            .bold()
+        Link("Privacy Policy", destination: URL(string: "https://ruchir-elukurthy.github.io/PrivacyPolicy/")!)
+            .font(.largeTitle)
+            .foregroundColor(.red)
     }
 }
 

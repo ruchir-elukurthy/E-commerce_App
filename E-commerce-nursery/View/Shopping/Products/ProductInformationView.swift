@@ -30,9 +30,9 @@ struct ProductInformationView: View {
                 }.padding(.trailing)
                 
                 ProductImageView(imageURL: product.image_link, price: product.price)
-                ProductQuantityView(quantity: product.quantity)
-                    .padding(.trailing,200)
-                    .padding(.bottom,10)
+//                ProductQuantityView(quantity: product.quantity)
+//                    .padding(.trailing,200)
+//                    .padding(.bottom,10)
                 ProductDescriptionView(description: product.description)
                     .padding(.leading,10)
                     .padding(.trailing,10)
