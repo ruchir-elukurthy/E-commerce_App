@@ -43,6 +43,9 @@
 		BA8E6927271913CA0079FB96 /* chair_swan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BA8E6921271913CA0079FB96 /* chair_swan.usdz */; };
 		BA8E6928271913CA0079FB96 /* Tall_Potted_House_Plant.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BA8E6922271913CA0079FB96 /* Tall_Potted_House_Plant.usdz */; };
 		BA8E692B271915900079FB96 /* ArViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8E692A271915900079FB96 /* ArViewContainer.swift */; };
+		BA8E692D27191F230079FB96 /* BrowseButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8E692C27191F230079FB96 /* BrowseButtonView.swift */; };
+		BA8E692F271923490079FB96 /* ARCatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8E692E271923490079FB96 /* ARCatalogView.swift */; };
+		BA8E6933271946DF0079FB96 /* CatalogSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8E6932271946DF0079FB96 /* CatalogSheetView.swift */; };
 		BA907B4826CC61660046B655 /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA907B4726CC61660046B655 /* NavBarView.swift */; };
 		BA907B5226CCA0080046B655 /* BundleDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA907B5126CCA0080046B655 /* BundleDecodable.swift */; };
 		BA907B5426CCA2130046B655 /* TabImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA907B5326CCA2130046B655 /* TabImageView.swift */; };
@@ -101,6 +104,9 @@
 		BA8E6921271913CA0079FB96 /* chair_swan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair_swan.usdz; sourceTree = "<group>"; };
 		BA8E6922271913CA0079FB96 /* Tall_Potted_House_Plant.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Tall_Potted_House_Plant.usdz; sourceTree = "<group>"; };
 		BA8E692A271915900079FB96 /* ArViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArViewContainer.swift; sourceTree = "<group>"; };
+		BA8E692C27191F230079FB96 /* BrowseButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseButtonView.swift; sourceTree = "<group>"; };
+		BA8E692E271923490079FB96 /* ARCatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCatalogView.swift; sourceTree = "<group>"; };
+		BA8E6932271946DF0079FB96 /* CatalogSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogSheetView.swift; sourceTree = "<group>"; };
 		BA907B4726CC61660046B655 /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
 		BA907B5126CCA0080046B655 /* BundleDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleDecodable.swift; sourceTree = "<group>"; };
 		BA907B5326CCA2130046B655 /* TabImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabImageView.swift; sourceTree = "<group>"; };
@@ -305,6 +311,9 @@
 			isa = PBXGroup;
 			children = (
 				BA8E692A271915900079FB96 /* ArViewContainer.swift */,
+				BA8E692E271923490079FB96 /* ARCatalogView.swift */,
+				BA8E692C27191F230079FB96 /* BrowseButtonView.swift */,
+				BA8E6932271946DF0079FB96 /* CatalogSheetView.swift */,
 			);
 			path = ARView;
 			sourceTree = "<group>";
@@ -528,12 +537,15 @@
 				BACE6F5A270D2B6B009787AD /* SearchModel.swift in Sources */,
 				BA7AD28126D9CBB2004DC366 /* UploadItemsToSell.swift in Sources */,
 				BA658DC926DC338000E79F88 /* ProductQuantityView.swift in Sources */,
+				BA8E692D27191F230079FB96 /* BrowseButtonView.swift in Sources */,
 				BACE6F5C270D4578009787AD /* SearchDetailView.swift in Sources */,
 				BA7E02FA26D6E09500223B51 /* RegistrationViewModel.swift in Sources */,
+				BA8E6933271946DF0079FB96 /* CatalogSheetView.swift in Sources */,
 				BA1D6AA526D860AB00E8BF0A /* UploadImageToSell.swift in Sources */,
 				BA868D1526CDFDF0001D4979 /* GridView.swift in Sources */,
 				BA7E02FD26D7131100223B51 /* CartViewModel.swift in Sources */,
 				BA82DB1326BE641600C4049E /* LoginView.swift in Sources */,
+				BA8E692F271923490079FB96 /* ARCatalogView.swift in Sources */,
 				BA7A13A6270FA628009CF476 /* NutritionInformationSearchView.swift in Sources */,
 				BA7AD28526D9CE85004DC366 /* UploadProductModel.swift in Sources */,
 				BA921E6026CF179F00244F0B /* SellingProductModel.swift in Sources */,

@@ -49,11 +49,11 @@ struct TabBarView: View {
                 Spacer()
                 
                 NavigationLink(
-                    destination: ARViewContainer(),
+                    destination: ARCatalogView(),
                     label: {
                         Image(systemName: tabBarImageItems[3])
                             .font(.system(size: 28, weight: .bold))
-                            .foregroundColor(selectedItem == 2 ? Color(.black) : .gray)
+                            .foregroundColor(selectedItem == 3 ? Color(.black) : .gray)
                     })
                 Spacer()
             }
