@@ -36,6 +36,13 @@
 		BA868D1326CDB1D5001D4979 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA868D1226CDB1D5001D4979 /* CategoryView.swift */; };
 		BA868D1526CDFDF0001D4979 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA868D1426CDFDF0001D4979 /* GridView.swift */; };
 		BA868D1726CE050D001D4979 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA868D1626CE050D001D4979 /* SectionView.swift */; };
+		BA8E6923271913CA0079FB96 /* Game-ready_Shovel.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BA8E691D271913C90079FB96 /* Game-ready_Shovel.usdz */; };
+		BA8E6924271913CA0079FB96 /* Gardening_Trowel.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BA8E691E271913C90079FB96 /* Gardening_Trowel.usdz */; };
+		BA8E6925271913CA0079FB96 /* Tool_Practice-_Hoe.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BA8E691F271913C90079FB96 /* Tool_Practice-_Hoe.usdz */; };
+		BA8E6926271913CA0079FB96 /* flower_tulip.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BA8E6920271913CA0079FB96 /* flower_tulip.usdz */; };
+		BA8E6927271913CA0079FB96 /* chair_swan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BA8E6921271913CA0079FB96 /* chair_swan.usdz */; };
+		BA8E6928271913CA0079FB96 /* Tall_Potted_House_Plant.usdz in Resources */ = {isa = PBXBuildFile; fileRef = BA8E6922271913CA0079FB96 /* Tall_Potted_House_Plant.usdz */; };
+		BA8E692B271915900079FB96 /* ArViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8E692A271915900079FB96 /* ArViewContainer.swift */; };
 		BA907B4826CC61660046B655 /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA907B4726CC61660046B655 /* NavBarView.swift */; };
 		BA907B5226CCA0080046B655 /* BundleDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA907B5126CCA0080046B655 /* BundleDecodable.swift */; };
 		BA907B5426CCA2130046B655 /* TabImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA907B5326CCA2130046B655 /* TabImageView.swift */; };
@@ -87,6 +94,13 @@
 		BA868D1226CDB1D5001D4979 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		BA868D1426CDFDF0001D4979 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		BA868D1626CE050D001D4979 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		BA8E691D271913C90079FB96 /* Game-ready_Shovel.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "Game-ready_Shovel.usdz"; sourceTree = "<group>"; };
+		BA8E691E271913C90079FB96 /* Gardening_Trowel.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Gardening_Trowel.usdz; sourceTree = "<group>"; };
+		BA8E691F271913C90079FB96 /* Tool_Practice-_Hoe.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "Tool_Practice-_Hoe.usdz"; sourceTree = "<group>"; };
+		BA8E6920271913CA0079FB96 /* flower_tulip.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = flower_tulip.usdz; sourceTree = "<group>"; };
+		BA8E6921271913CA0079FB96 /* chair_swan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair_swan.usdz; sourceTree = "<group>"; };
+		BA8E6922271913CA0079FB96 /* Tall_Potted_House_Plant.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Tall_Potted_House_Plant.usdz; sourceTree = "<group>"; };
+		BA8E692A271915900079FB96 /* ArViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArViewContainer.swift; sourceTree = "<group>"; };
 		BA907B4726CC61660046B655 /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
 		BA907B5126CCA0080046B655 /* BundleDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleDecodable.swift; sourceTree = "<group>"; };
 		BA907B5326CCA2130046B655 /* TabImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabImageView.swift; sourceTree = "<group>"; };
@@ -194,6 +208,8 @@
 		BA82DAFB26BE230F00C4049E /* E-commerce-nursery */ = {
 			isa = PBXGroup;
 			children = (
+				BA8E69292719157A0079FB96 /* ARView */,
+				BA8E691C2719139B0079FB96 /* 3D Assests-AR */,
 				BA658DCC26DC37E700E79F88 /* Data */,
 				BA907B4D26CC9F700046B655 /* Model */,
 				BA82DB0D26BE5ED200C4049E /* View */,
@@ -270,6 +286,27 @@
 				BA82DB1226BE641600C4049E /* LoginView.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		BA8E691C2719139B0079FB96 /* 3D Assests-AR */ = {
+			isa = PBXGroup;
+			children = (
+				BA8E6921271913CA0079FB96 /* chair_swan.usdz */,
+				BA8E6920271913CA0079FB96 /* flower_tulip.usdz */,
+				BA8E691D271913C90079FB96 /* Game-ready_Shovel.usdz */,
+				BA8E691E271913C90079FB96 /* Gardening_Trowel.usdz */,
+				BA8E6922271913CA0079FB96 /* Tall_Potted_House_Plant.usdz */,
+				BA8E691F271913C90079FB96 /* Tool_Practice-_Hoe.usdz */,
+			);
+			path = "3D Assests-AR";
+			sourceTree = "<group>";
+		};
+		BA8E69292719157A0079FB96 /* ARView */ = {
+			isa = PBXGroup;
+			children = (
+				BA8E692A271915900079FB96 /* ArViewContainer.swift */,
+			);
+			path = ARView;
 			sourceTree = "<group>";
 		};
 		BA907B4926CC79C00046B655 /* Shopping */ = {
@@ -405,10 +442,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA8E6923271913CA0079FB96 /* Game-ready_Shovel.usdz in Resources */,
 				BA658DCE26DC37F900E79F88 /* NurseryCategories.json in Resources */,
+				BA8E6924271913CA0079FB96 /* Gardening_Trowel.usdz in Resources */,
+				BA8E6926271913CA0079FB96 /* flower_tulip.usdz in Resources */,
+				BA8E6925271913CA0079FB96 /* Tool_Practice-_Hoe.usdz in Resources */,
 				BA658DCB26DC36EC00E79F88 /* gardenImages.json in Resources */,
 				BA82DB0426BE231300C4049E /* Preview Assets.xcassets in Resources */,
 				BA82DB0126BE231300C4049E /* Assets.xcassets in Resources */,
+				BA8E6928271913CA0079FB96 /* Tall_Potted_House_Plant.usdz in Resources */,
+				BA8E6927271913CA0079FB96 /* chair_swan.usdz in Resources */,
 				BA670B5C26BF79890043E2A2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +514,7 @@
 				BA670B5E26BF82030043E2A2 /* ShopView.swift in Sources */,
 				BA96E8B8270F9003003C06C1 /* BuyButtonView.swift in Sources */,
 				BACE6F56270D0BAB009787AD /* SearchBarView.swift in Sources */,
+				BA8E692B271915900079FB96 /* ArViewContainer.swift in Sources */,
 				BA868D1326CDB1D5001D4979 /* CategoryView.swift in Sources */,
 				BA7E02FF26D7188800223B51 /* CartModel.swift in Sources */,
 				BA82DB1526BE642400C4049E /* RegisterView.swift in Sources */,

@@ -10,7 +10,7 @@ import SwiftUI
 struct TabBarView: View {
     @State var selectedItem = 0
     
-    let tabBarImageItems = ["house", "plus.app.fill", "magnifyingglass.circle"]
+    let tabBarImageItems = ["house", "plus.app.fill", "magnifyingglass.circle","leaf"]
     
     var body: some View {
         VStack {
@@ -46,6 +46,15 @@ struct TabBarView: View {
                             .font(.system(size: 28, weight: .bold))
                             .foregroundColor(selectedItem == 2 ? Color(.black) : .gray)
                 })
+                Spacer()
+                
+                NavigationLink(
+                    destination: ARViewContainer(),
+                    label: {
+                        Image(systemName: tabBarImageItems[3])
+                            .font(.system(size: 28, weight: .bold))
+                            .foregroundColor(selectedItem == 2 ? Color(.black) : .gray)
+                    })
                 Spacer()
             }
         }

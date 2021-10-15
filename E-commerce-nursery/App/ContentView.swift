@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//ContentView deals with checking if the user is logged in or not and direct them towards the correct view.
 struct ContentView: View {
     
     @EnvironmentObject var viewModel : RegisterViewModel
@@ -31,3 +32,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
+

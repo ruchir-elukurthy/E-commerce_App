@@ -11,6 +11,7 @@ import IQKeyboardManagerSwift
 import LTMorphingLabel
 
 
+//Top of the hierarchy.
 @main
 struct E_commerce_nurseryApp: App {
     init() {
@@ -20,7 +21,10 @@ struct E_commerce_nurseryApp: App {
     var body: some Scene {
         let viewModel = RegisterViewModel()
         WindowGroup {
-            ContentView().environmentObject(viewModel)
+            ContentView().environmentObject(viewModel)          //sharing login/registration information to throughout the hierarchy using environment object for mapping user specific content.
         }
     }
 }
+
+
+
