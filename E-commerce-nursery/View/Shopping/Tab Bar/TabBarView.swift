@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+//Navigation to different functionalities for the app.
 struct TabBarView: View {
     @State var selectedItem = 0
     
@@ -20,7 +22,7 @@ struct TabBarView: View {
                 Spacer()
                 
                 NavigationLink (
-                    destination: ShopView(),
+                    destination: ShopView(),            //Navigation to home shppoing page
                     label : {
                         Image(systemName: tabBarImageItems[0])
                             .font(.system(size: 28, weight: .bold))
@@ -30,7 +32,7 @@ struct TabBarView: View {
                 Spacer()
                 
                 NavigationLink(
-                    destination: UploadItemsToSell(),
+                    destination: UploadItemsToSell(),       //Navigation to view where people can post.
                     label: {
                         Image(systemName: tabBarImageItems[1])
                             .font(.system(size: 44, weight: .bold))
@@ -40,7 +42,7 @@ struct TabBarView: View {
                 Spacer()
                 
                 NavigationLink (
-                    destination: NutritionInformationSearchView(),
+                    destination: NutritionInformationSearchView(),      //Navigation to nutrition search.
                     label : {
                         Image(systemName: tabBarImageItems[2])
                             .font(.system(size: 28, weight: .bold))

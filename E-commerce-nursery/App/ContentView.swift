@@ -14,7 +14,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                if viewModel.isSignedIn {
+                if viewModel.isSignedIn {       //Redirecting view to the correct view based on log in.
                     ShopView()
                 }
                 else {

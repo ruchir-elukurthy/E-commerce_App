@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+//Collection of all views from top to bottom as they appear in the view.
 struct ProductInformationView: View {
     
     var product: UploadProduct
@@ -15,7 +17,7 @@ struct ProductInformationView: View {
         VStack {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(spacing: 0) {
-                    NavBarProductView()
+                    NavBarProductView()             //Navigation bar for app name, cart addition
                         .padding(.horizontal, 15)
                         .padding(.bottom)
                         .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
@@ -29,15 +31,15 @@ struct ProductInformationView: View {
                         .fontWeight(.bold)
                 }.padding(.trailing)
                 
-                ProductImageView(imageURL: product.image_link, price: product.price)
+                ProductImageView(imageURL: product.image_link, price: product.price)        //Image of product
 //                ProductQuantityView(quantity: product.quantity)
 //                    .padding(.trailing,200)
 //                    .padding(.bottom,10)
-                ProductDescriptionView(description: product.description)
+                ProductDescriptionView(description: product.description)        //Description of prodcur
                     .padding(.leading,10)
                     .padding(.trailing,10)
             }
-            CartAdditionButton(product: product)
+            CartAdditionButton(product: product)        //cart addition button
                 .padding(.bottom,18)
         }
         .background(Color.gray.opacity(0.1))

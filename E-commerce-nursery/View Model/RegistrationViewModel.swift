@@ -8,6 +8,9 @@
 import SwiftUI
 import Firebase
 
+
+
+//View model for login and registration
 class RegisterViewModel: ObservableObject {
     var email: String = ""
     var password: String = ""

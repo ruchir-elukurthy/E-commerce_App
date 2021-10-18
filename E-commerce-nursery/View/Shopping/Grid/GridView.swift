@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//Different categories of things available to buy are presented to the user in horizontal grid.
 struct GridView: View {
     
     let items = 1...7

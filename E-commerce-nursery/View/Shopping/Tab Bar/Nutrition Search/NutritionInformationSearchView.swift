@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+//Only privacy policy being displayed as of now.
 struct NutritionInformationSearchView: View {
     var body: some View {
         Link("Privacy Policy", destination: URL(string: "https://ruchir-elukurthy.github.io/PrivacyPolicy/")!)

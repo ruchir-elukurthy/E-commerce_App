@@ -8,6 +8,7 @@
 import SwiftUI
 import Firebase
 
+//View for registraration
 struct RegisterView: View {
     
     @State var email: String = ""
@@ -42,7 +43,7 @@ struct RegisterView: View {
                 guard !email.isEmpty, !password.isEmpty else {
                     return
                 }
-                viewModel.register(email: email, password: password)
+                viewModel.register(email: email, password: password)    //passing information from view to view model.
             }, label: {
                 Text("Register")
                     .font(.headline)

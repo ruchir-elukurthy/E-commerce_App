@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+//Fetching the item names from json file.
 struct CategoryView: View {
     
     let category : [Category] = Bundle.main.decode("NurseryCategories.json")

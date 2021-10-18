@@ -8,7 +8,7 @@
 import SwiftUI
 import Firebase
 
-
+//This is the view is for login.
 struct LoginView: View {
     
     @State var email: String = ""
@@ -49,7 +49,7 @@ struct LoginView: View {
             guard !email.isEmpty, !password.isEmpty else {
                 return
             }
-            viewModel.login(email: email, password: password)
+            viewModel.login(email: email, password: password)   //passing user entered email and password to the view model.
         }, label: {
             Text("Login")
                 .font(.headline)

@@ -8,6 +8,8 @@
 import Foundation
 import FirebaseFirestoreSwift
 
+
+//This is model for cart items.
 struct CartItems: Identifiable, Codable {
     @DocumentID var id: String? = UUID().uuidString
     var user: String

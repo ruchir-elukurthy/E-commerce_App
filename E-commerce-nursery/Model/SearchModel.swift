@@ -7,6 +7,8 @@
 
 import Foundation
 
+
+//This is the model to search information for any item in uploads.
 struct searchData: Identifiable, Codable {
     var id: String
     var name: String

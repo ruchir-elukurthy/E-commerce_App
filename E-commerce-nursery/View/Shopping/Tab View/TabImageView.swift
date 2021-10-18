@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+//Images loaded from json are presented as a slideshow.
 struct TabImageView: View {
     
     let plants : [Plant] = Bundle.main.decode("gardenImages.json")

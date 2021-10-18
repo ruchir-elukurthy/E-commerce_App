@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//This is the search bar view.
 struct SearchBarView: View {
     @State var search_text: String = ""
      
@@ -33,6 +34,8 @@ struct SearchBarView: View {
             .animation(.default)
         }
         
+        
+        //Looking for matches in the text entered and navigation to the right item if it is present.
         if self.search_text != "" {
             if self.resultant_search_data.filter({$0.name.lowercased().contains(self.search_text.lowercased())}).count == 0 {
                 Text("No results found")

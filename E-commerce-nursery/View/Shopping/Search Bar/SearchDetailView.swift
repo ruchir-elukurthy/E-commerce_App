@@ -8,6 +8,8 @@
 import SwiftUI
 import Firebase
 
+
+//Show all the details for the item searched for.
 struct SearchDetailView: View {
     
     var data: searchData

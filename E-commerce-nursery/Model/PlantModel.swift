@@ -7,6 +7,7 @@
 
 import Foundation
 
+//This is the model for images fetched from garden images json file.
 struct Plant: Codable, Identifiable {
     let id: Int
     let image: String

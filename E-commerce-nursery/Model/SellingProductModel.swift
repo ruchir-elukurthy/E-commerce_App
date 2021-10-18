@@ -7,6 +7,7 @@
 
 import Foundation
 
+//This is the model for product information display that users can buy.
 struct Product: Codable, Identifiable {
     let id: Int
     let name: String

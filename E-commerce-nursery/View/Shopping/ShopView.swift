@@ -7,29 +7,32 @@
 
 import SwiftUI
 
+
+//Thi is the hompage for the shop view.
 struct ShopView: View {
     
     @ObservedObject var loadViewModel = FetchProductsViewModel()
     @ObservedObject var searchViewModel = SearchViewModel()
     
+    //All the sub views are written in the order of how they appear in the view from top to bottom
     var body: some View {
         VStack() {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(spacing: 0) {
-                    NavBarView()
+                    NavBarView()                    //top pane of an app (app name, cart and sign out)
                         .padding(.horizontal, 15)
                         .padding(.bottom)
                         .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
                         .background(Color.white)
                         .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 5)
                     Spacer(minLength: 30)
-                    SearchBarView(resultant_search_data: self.$searchViewModel.searchInfo)
+                    SearchBarView(resultant_search_data: self.$searchViewModel.searchInfo)  // normal search bar to search info
                         .padding(.bottom)
-                    TabImageView()
+                    TabImageView()                      //just to see catalog images
                         .frame(width: 350, height: 230)
                         .cornerRadius(12.0)
                         .padding(.bottom)
-                    GridView()
+                    GridView()                          //what all are there in the listing.
                         .padding(.bottom)
                     HStack {
                         Text("Listing")
@@ -38,11 +41,11 @@ struct ShopView: View {
                             .padding(.trailing, 230)
                     }
                     
-                    ProductLoadView()
+                    ProductLoadView()               //products in the listing.
                 }
             }
             Spacer()
-            TabBarView()
+            TabBarView()                            //bottom bar to view different features of app.
                 .padding()
         }
         .background(Color.gray.opacity(0.1))
