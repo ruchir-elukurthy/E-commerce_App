@@ -31,7 +31,7 @@ struct ProductLoadView: View {
                         VStack {
                             ZStack {
                                 Image(systemName: "person.fill")
-                                    .data(url: URL(string: products.image_link)!)
+                                    .data(url: (URL(string: products.image_link) ?? URL(string: "https://firebasestorage.googleapis.com/v0/b/ecommercenursery.appspot.com/o/images%2F52DF2D6A-8505-43D2-9B6C-36A8CDEB4B8B.png?alt=media&token=69c9c305-b049-4f6d-8c96-f8db820d5ca4")!))
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 150, height: 100, alignment: .center)

@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 struct Plant: Codable, Identifiable {
     let id: Int
     let image: String
