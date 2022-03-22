@@ -11,5 +11,9 @@ target 'E-commerce-nursery' do
   pod 'Firebase/Storage'
   pod 'IQKeyboardManagerSwift'
   pod 'LTMorphingLabel'
+  target 'E-commerce-nurseryTests' do
+        inherit! :search_paths
+        pod 'Firebase'
+  end
 
 end

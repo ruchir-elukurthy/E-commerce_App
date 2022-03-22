@@ -12,7 +12,7 @@ struct CartAdditionButton: View {
     
     var product: UploadProduct
     @State var email_id: String = ""
-    @StateObject var viewModel = AddtoCartViewModel()
+    @ObservedObject var viewModel = AddtoCartViewModel()
     
     var body: some View {
         VStack {

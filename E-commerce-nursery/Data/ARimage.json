@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "image": "Chair",
+        "ARmodel": "chair_swan.usdz"
+    },
+    {
+        "id": 2,
+        "image": "Tulip",
+        "ARmodel": "flower_tulip.usdz"
+    },
+    {
+        "id": 3,
+        "image": "Shovel",
+        "ARmodel": "Gardening_Trowel.usdz"
+    }
+]
